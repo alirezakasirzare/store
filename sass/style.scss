@@ -27,6 +27,7 @@
         0 3px 14px 2px rgba(163, 150, 150, 0.12),
         0 5px 5px -3px rgba(163, 150, 150, 0.3);
 
+      // right menu
       &__right {
         @extend .px-0;
         @extend .d-flex;
@@ -45,6 +46,31 @@
           @extend .d-flex;
           @extend .gap-2;
           @extend .align-items-center;
+          @extend .rounded-3;
+          color: $color-primary-500;
+          &:hover {
+            color: #fff;
+            background-color: $color-primary-500;
+          }
+        }
+      }
+      // left menu
+      &__left {
+        @extend .px-0;
+        @extend .d-flex;
+        @extend .mb-0;
+        @extend .align-items-center;
+        list-style: none;
+
+        .vr {
+          height: 1.5rem !important;
+          transform: translateY(20%);
+        }
+
+        &__link {
+          @extend .text-decoration-none;
+          @extend .py-1;
+          @extend .px-2;
           @extend .rounded-3;
           color: $color-primary-500;
           &:hover {
