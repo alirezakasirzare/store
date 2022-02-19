@@ -42,8 +42,10 @@
           @extend .text-decoration-none;
           @extend .py-1;
           @extend .px-2;
+          @extend .d-flex;
+          @extend .gap-2;
+          @extend .align-items-center;
           @extend .rounded-3;
-
           color: $color-primary-500;
           &:hover {
             color: #fff;

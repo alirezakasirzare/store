@@ -5141,7 +5141,7 @@ textarea.form-control-lg {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, .main-header__nav__row, .main-header__nav__row__right {
+.d-flex, .main-header__nav__row, .main-header__nav__row__right, .main-header__nav__row__right__link {
   display: flex !important; }
 
 .d-inline-flex {
@@ -5384,7 +5384,7 @@ textarea.form-control-lg {
 .gap-1 {
   gap: 0.25rem !important; }
 
-.gap-2 {
+.gap-2, .main-header__nav__row__right__link {
   gap: 0.5rem !important; }
 
 .gap-3 {
@@ -5420,7 +5420,7 @@ textarea.form-control-lg {
 .align-items-end {
   align-items: flex-end !important; }
 
-.align-items-center, .main-header__nav__row__right {
+.align-items-center, .main-header__nav__row__right, .main-header__nav__row__right__link {
   align-items: center !important; }
 
 .align-items-baseline {
