@@ -5142,7 +5142,7 @@ textarea.form-control-lg {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, .main-header__nav__row, .main-header__nav__row__right, .main-header__nav__row__right__link, .main-header__nav__row__left {
+.d-flex, .main-header__nav__row, .main-header__nav__row__right, .main-header__nav__row__right__link, .main-header__nav__row__left, .main-header__nav__row__left__link {
   display: flex !important; }
 
 .d-inline-flex {
@@ -5421,7 +5421,7 @@ textarea.form-control-lg {
 .align-items-end {
   align-items: flex-end !important; }
 
-.align-items-center, .main-header__nav__row__right, .main-header__nav__row__right__link, .main-header__nav__row__left {
+.align-items-center, .main-header__nav__row__right, .main-header__nav__row__right__link, .main-header__nav__row__left, .main-header__nav__row__left__link {
   align-items: center !important; }
 
 .align-items-baseline {
@@ -5697,7 +5697,7 @@ textarea.form-control-lg {
   padding-top: 0 !important;
   padding-bottom: 0 !important; }
 
-.py-1, .main-header__nav__row__right__link, .main-header__nav__row__left__link {
+.py-1, .main-header__nav__row, .main-header__nav__row__right__link, .main-header__nav__row__left__link {
   padding-top: 0.25rem !important;
   padding-bottom: 0.25rem !important; }
 
@@ -5709,7 +5709,7 @@ textarea.form-control-lg {
   padding-top: 1rem !important;
   padding-bottom: 1rem !important; }
 
-.py-4, .main-header__nav__row {
+.py-4 {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important; }
 
@@ -7031,7 +7031,7 @@ textarea.form-control-lg {
   .py-lg-1 {
     padding-top: 0.25rem !important;
     padding-bottom: 0.25rem !important; }
-  .py-lg-2 {
+  .py-lg-2, .main-header__nav__row {
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important; }
   .py-lg-3 {
@@ -7829,8 +7829,12 @@ body {
       .main-header__nav__row__right {
         list-style: none; }
         .main-header__nav__row__right__logo {
-          max-width: 80px; }
+          max-width: 50px; }
+          @media screen and (min-width: 992px) {
+            .main-header__nav__row__right__logo {
+              max-width: 80px; } }
         .main-header__nav__row__right__link {
+          transition: 0.3s ease background, 0.3s ease color;
           color: #be7783; }
           .main-header__nav__row__right__link:hover {
             color: #fff;
@@ -7840,10 +7844,8 @@ body {
             background-color: #be7783; }
       .main-header__nav__row__left {
         list-style: none; }
-        .main-header__nav__row__left .vr {
-          height: 1.5rem !important;
-          transform: translateY(20%); }
         .main-header__nav__row__left__link {
+          transition: 0.3s ease background, 0.3s ease color;
           color: #be7783; }
           .main-header__nav__row__left__link:hover {
             color: #fff;

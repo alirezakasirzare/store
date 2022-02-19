@@ -18,7 +18,8 @@
       @extend .d-flex;
       @extend .bg-white;
       @extend .rounded;
-      @extend .py-4;
+      @extend .py-1;
+      @extend .py-lg-2;
       @extend .px-0;
       @extend .justify-content-between;
       @extend .px-4;
@@ -35,7 +36,10 @@
         list-style: none;
 
         &__logo {
-          max-width: 80px;
+          max-width: 50px;
+          @include media("lg") {
+            max-width: 80px;
+          }
         }
 
         &__link {
@@ -46,6 +50,7 @@
           @extend .gap-2;
           @extend .align-items-center;
           @extend .rounded-3;
+          transition: 0.3s ease background, 0.3s ease color;
           color: $color-primary-500;
           &:hover {
             color: #fff;
@@ -66,16 +71,14 @@
         @extend .align-items-center;
         list-style: none;
 
-        .vr {
-          height: 1.5rem !important;
-          transform: translateY(20%);
-        }
-
         &__link {
           @extend .text-decoration-none;
           @extend .py-1;
           @extend .px-2;
           @extend .rounded-3;
+          @extend .d-flex;
+          @extend .align-items-center;
+          transition: 0.3s ease background, 0.3s ease color;
           color: $color-primary-500;
           &:hover {
             color: #fff;
