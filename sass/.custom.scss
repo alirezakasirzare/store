@@ -11,6 +11,11 @@ $color-primary-700: #ac5262;
 $color-primary-800: #a03a4b;
 $color-primary-900: #942135;
 
-.bg-primary-custom {
-  background-color: $color-primary !important;
+@font-face {
+  font-family: shabnam;
+  src: url(../font/Shabnam.ttf);
+}
+
+body {
+  font-family: shabnam;
 }

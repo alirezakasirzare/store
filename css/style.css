@@ -5420,7 +5420,7 @@ textarea.form-control-lg {
 .align-items-end {
   align-items: flex-end !important; }
 
-.align-items-center {
+.align-items-center, .main-header__nav__row__right {
   align-items: center !important; }
 
 .align-items-baseline {
@@ -5676,7 +5676,7 @@ textarea.form-control-lg {
   padding-right: 0.25rem !important;
   padding-left: 0.25rem !important; }
 
-.px-2 {
+.px-2, .main-header__nav__row__right__link {
   padding-right: 0.5rem !important;
   padding-left: 0.5rem !important; }
 
@@ -5696,7 +5696,7 @@ textarea.form-control-lg {
   padding-top: 0 !important;
   padding-bottom: 0 !important; }
 
-.py-1 {
+.py-1, .main-header__nav__row__right__link {
   padding-top: 0.25rem !important;
   padding-bottom: 0.25rem !important; }
 
@@ -5851,7 +5851,7 @@ textarea.form-control-lg {
 .text-center {
   text-align: center !important; }
 
-.text-decoration-none {
+.text-decoration-none, .main-header__nav__row__right__link {
   text-decoration: none !important; }
 
 .text-decoration-underline {
@@ -6046,7 +6046,7 @@ textarea.form-control-lg {
 .rounded-2 {
   border-radius: 0.25rem !important; }
 
-.rounded-3 {
+.rounded-3, .main-header__nav__row__right__link {
   border-radius: 0.3rem !important; }
 
 .rounded-circle {
@@ -7809,11 +7809,16 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-.bg-primary-custom, .main-header {
-  background-color: #c4848f !important; }
+@font-face {
+  font-family: shabnam;
+  src: url(../font/Shabnam.ttf); }
+
+body {
+  font-family: shabnam; }
 
 /* main height */
 .main-header {
+  background-color: #c4848f !important;
   height: 100px;
   width: 100%; }
   .main-header__nav {
@@ -7822,5 +7827,12 @@ textarea.form-control-lg {
       box-shadow: 0 8px 17px 2px rgba(163, 150, 150, 0.14), 0 3px 14px 2px rgba(163, 150, 150, 0.12), 0 5px 5px -3px rgba(163, 150, 150, 0.3); }
       .main-header__nav__row__right {
         list-style: none; }
+        .main-header__nav__row__right__logo {
+          max-width: 80px; }
+        .main-header__nav__row__right__link {
+          color: #be7783; }
+          .main-header__nav__row__right__link:hover {
+            color: #fff;
+            background-color: #be7783; }
 
 /* ------------ responsive ------------ */

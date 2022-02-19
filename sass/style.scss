@@ -3,7 +3,7 @@
 /* main height */
 .main-header {
   @extend .position-relative;
-  @extend .bg-primary-custom;
+  background-color: $color-primary !important;
   height: 100px;
   width: 100%;
 
@@ -31,7 +31,25 @@
         @extend .px-0;
         @extend .d-flex;
         @extend .mb-0;
+        @extend .align-items-center;
         list-style: none;
+
+        &__logo {
+          max-width: 80px;
+        }
+
+        &__link {
+          @extend .text-decoration-none;
+          @extend .py-1;
+          @extend .px-2;
+          @extend .rounded-3;
+
+          color: $color-primary-500;
+          &:hover {
+            color: #fff;
+            background-color: $color-primary-500;
+          }
+        }
       }
     }
   }
