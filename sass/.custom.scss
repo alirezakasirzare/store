@@ -19,3 +19,10 @@ $color-primary-900: #942135;
 body {
   font-family: shabnam;
 }
+
+.container-custom {
+  @extend .container-lg;
+  @extend .px-2;
+  @extend .px-sm-3;
+  @extend .px-lg-0;
+}

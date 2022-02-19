@@ -15,7 +15,6 @@
     top: 90%;
 
     &__row {
-      @extend .container;
       @extend .d-flex;
       @extend .bg-white;
       @extend .rounded;
@@ -88,7 +87,8 @@
 
   // dropdown
   .dropdown-item:hover {
-    background-color: $color-primary-200 !important;
+    background-color: $color-primary-400 !important;
+    color: #fff !important;
   }
 }
 
