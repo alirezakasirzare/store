@@ -1,0 +1,27 @@
+{
+  "name": "store-dress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass sass/style.scss css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alirezakasirzare/store.git"
+  },
+  "keywords": [],
+  "author": "Alireza Kasirzareh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alirezakasirzare/store/issues"
+  },
+  "homepage": "https://github.com/alirezakasirzare/store#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
