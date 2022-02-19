@@ -52,6 +52,10 @@
             color: #fff;
             background-color: $color-primary-500;
           }
+          &--active {
+            color: #fff;
+            background-color: $color-primary-500;
+          }
         }
       }
       // left menu
@@ -80,6 +84,11 @@
         }
       }
     }
+  }
+
+  // dropdown
+  .dropdown-item:hover {
+    background-color: $color-primary-200 !important;
   }
 }
 

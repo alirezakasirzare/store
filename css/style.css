@@ -7834,6 +7834,9 @@ body {
           .main-header__nav__row__right__link:hover {
             color: #fff;
             background-color: #be7783; }
+          .main-header__nav__row__right__link--active {
+            color: #fff;
+            background-color: #be7783; }
       .main-header__nav__row__left {
         list-style: none; }
         .main-header__nav__row__left .vr {
@@ -7844,5 +7847,7 @@ body {
           .main-header__nav__row__left__link:hover {
             color: #fff;
             background-color: #be7783; }
+  .main-header .dropdown-item:hover {
+    background-color: #dbb5bb !important; }
 
 /* ------------ responsive ------------ */
