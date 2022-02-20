@@ -7916,6 +7916,10 @@ body {
           .main-header__nav__row__right__link--active {
             color: #fff;
             background-color: #be7783; }
+        .main-header__nav__row__right__link i {
+          transition: 0.3s ease transform; }
+        .main-header__nav__row__right__link.show i {
+          transform: rotate(180deg); }
       .main-header__nav__row__left {
         animation-name: slidenavAnimation;
         animation-duration: 0.8s;

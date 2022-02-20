@@ -63,6 +63,12 @@
             background-color: $color-primary-500;
           }
         }
+        &__link i {
+          transition: 0.3s ease transform;
+        }
+        &__link.show i {
+          transform: rotate(180deg);
+        }
       }
       // left menu
       &__left {
