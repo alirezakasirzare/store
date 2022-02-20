@@ -6,13 +6,7 @@ myDropdownsTogglerHeader = Array.from(myDropdownsTogglerHeader);
 
 myDropdownsTogglerHeader.forEach((dropdownToggler) => {
   // init the dropdown
-  var dropdownInstance = new bootstrap.Dropdown(dropdownToggler, {
-    popperConfig: function (defaultBsPopperConfig) {
-      // var newPopperConfig = {...}
-      // use defaultBsPopperConfig if needed...
-      // return newPopperConfig
-    },
-  });
+  var dropdownInstance = new bootstrap.Dropdown(dropdownToggler);
   const dropdown = dropdownInstance._menu;
   let cliced = false;
 
