@@ -42,3 +42,28 @@ myDropdownsTogglerHeader.forEach((dropdownToggler) => {
     cliced = false;
   });
 });
+
+// saerch handel toggle
+function handelSearchForm(e, openMode = true) {
+  e?.preventDefault();
+  e?.stopPropagation();
+  const tooglePlace = document.getElementById("toggleSeatchPlace");
+  tooglePlace.classList[openMode ? "add" : "remove"]("open-search");
+}
+clickOutsideHandel(document.getElementById("formSearch"), () => {
+  handelSearchForm(null, false);
+});
+// function openSearchForm(e) {
+//   e.preventDefault();
+//   const tooglePlace = document.getElementById("toggleSeatchPlace");
+//   tooglePlace.classList.add("open-search");
+// }
+
+function clickOutsideHandel(element, doingFunction) {
+  document.addEventListener("click", function (event) {
+    var isClickInsideElement = element.contains(event.target);
+    if (!isClickInsideElement) {
+      doingFunction();
+    }
+  });
+}

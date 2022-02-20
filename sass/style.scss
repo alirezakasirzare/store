@@ -22,6 +22,7 @@
       @extend .py-lg-2;
       @extend .justify-content-between;
       @extend .px-2;
+      min-height: 55px;
       box-shadow: 0 8px 17px 2px rgba(163, 150, 150, 0.14),
         0 3px 14px 2px rgba(163, 150, 150, 0.12),
         0 5px 5px -3px rgba(163, 150, 150, 0.3);
@@ -32,6 +33,7 @@
         @extend .d-flex;
         @extend .mb-0;
         @extend .align-items-center;
+        @include fadeAnimation;
         list-style: none;
 
         &__logo {
@@ -68,6 +70,7 @@
         @extend .d-flex;
         @extend .mb-0;
         @extend .align-items-center;
+        @include fadeAnimation;
         list-style: none;
 
         &__link {
@@ -88,16 +91,20 @@
 
       // search menu
       &__search {
-        @extend .ms-2;
-        @extend .d-flex;
+        @extend .ms-0;
         @extend .mb-0;
         @extend .align-items-center;
         @extend .position-relative;
         @extend .w-100;
-        max-width: 260px;
+        @extend .d-none;
+        @include media("md") {
+          max-width: 260px;
+          margin-left: 0.5rem !important;
+        }
         @include media("lg") {
           max-width: 400px;
         }
+        @include fadeAnimation;
 
         input {
           @extend .form-control;
@@ -108,7 +115,23 @@
           @extend .px-3;
           @extend .py-2;
           @extend .translate-middle-y;
+          // @extend .border-0;
+          border-style: none !important;
+          box-shadow: none !important;
           padding-left: 100px !important;
+          @include media("md") {
+            // @extend .form-control;
+            border-style: solid !important;
+            // border-width: 1px !important;
+          }
+
+          &:focus {
+            @include media("md") {
+              box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25) !important;
+              // @extend .form-control;
+              // border-width: 1px !important;
+            }
+          }
         }
 
         &__submit {
@@ -124,6 +147,24 @@
         }
       }
     }
+
+    // handel open search
+    .open-search {
+      .main-header__nav__row__search {
+        @extend .d-flex;
+      }
+
+      .main-header__nav__row__right {
+        @extend .d-none;
+        @include media("md") {
+          display: flex !important;
+        }
+      }
+
+      .main-header__nav__row__left {
+        @extend .d-none;
+      }
+    }
   }
 
   // dropdown
@@ -137,40 +178,6 @@
   }
 
   .dropdown-menu {
-    animation-name: slidenavAnimation;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-
-    -webkit-animation-name: slidenavAnimation;
-    -webkit-animation-duration: 0.5s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease;
-    -webkit-animation-fill-mode: forwards;
-
-    -moz-animation-name: slidenavAnimation;
-    -moz-animation-duration: 0.5s;
-    -moz-animation-iteration-count: 1;
-    -moz-animation-timing-function: ease;
-    -moz-animation-fill-mode: forwards;
-  }
-  @keyframes slidenavAnimation {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @-webkit-keyframes slidenavAnimation {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+    @include fadeAnimation;
   }
 }
-
-/* ------------ responsive ------------ */

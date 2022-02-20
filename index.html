@@ -24,7 +24,7 @@
     <header class="main-header">
       <div class="main-header__nav">
         <div class="container-custom">
-          <div class="main-header__nav__row">
+          <div class="main-header__nav__row" id="toggleSeatchPlace">
             <!-- right menu -->
             <ul class="main-header__nav__row__right">
               <li class="ps-1 pe-0 d-md-none">
@@ -99,9 +99,13 @@
               </li>
             </ul>
             <!-- left menu -->
-            <ul class="main-header__nav__row__left d-none">
+            <ul class="main-header__nav__row__left">
               <li class="px-0 ps-lg-1">
-                <a href="" class="main-header__nav__row__left__link">
+                <a
+                  href="#"
+                  class="main-header__nav__row__left__link"
+                  onclick="handelSearchForm(event)"
+                >
                   <i class="fal fa-search fs-5"></i>
                 </a>
               </li>
@@ -123,7 +127,12 @@
               </li>
             </ul>
             <!-- search item -->
-            <form action="#" method="get" class="main-header__nav__row__search">
+            <form
+              action="#"
+              method="get"
+              class="main-header__nav__row__search"
+              id="formSearch"
+            >
               <input type="search" placeholder="نام محصول یا دسته" />
               <button
                 class="main-header__nav__row__search__submit"
