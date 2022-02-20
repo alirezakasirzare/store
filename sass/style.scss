@@ -85,6 +85,44 @@
           }
         }
       }
+
+      // search menu
+      &__search {
+        @extend .ms-2;
+        @extend .d-flex;
+        @extend .mb-0;
+        @extend .align-items-center;
+        @extend .position-relative;
+        @extend .w-100;
+        max-width: 260px;
+        @include media("lg") {
+          max-width: 400px;
+        }
+
+        input {
+          @extend .form-control;
+          @extend .position-absolute;
+          @extend .start-0;
+          @extend .top-50;
+          @extend .w-100;
+          @extend .px-3;
+          @extend .py-2;
+          @extend .translate-middle-y;
+          padding-left: 100px !important;
+        }
+
+        &__submit {
+          @extend .position-absolute;
+          @extend .start-0;
+          @extend .top-50;
+          @extend .px-3;
+          @extend .py-1;
+          @extend .translate-middle-y;
+          @extend .btn;
+          @extend .ms-1;
+          @extend .btn-outline-primary-custom;
+        }
+      }
     }
   }
 

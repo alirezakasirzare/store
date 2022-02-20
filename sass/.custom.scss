@@ -40,3 +40,8 @@ body {
     }
   }
 }
+
+.btn-outline-primary-custom {
+  @include button-outline-variant($color-primary, #fff, $active-color: #fff);
+  // color: #fff;
+}
