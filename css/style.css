@@ -5669,7 +5669,7 @@ textarea.form-control-lg {
 .p-5 {
   padding: 3rem !important; }
 
-.px-0, .main-header__nav__row, .main-header__nav__row__right, .main-header__nav__row__left {
+.px-0, .main-header__nav__row__right, .main-header__nav__row__left {
   padding-right: 0 !important;
   padding-left: 0 !important; }
 
@@ -5677,7 +5677,7 @@ textarea.form-control-lg {
   padding-right: 0.25rem !important;
   padding-left: 0.25rem !important; }
 
-.px-2, .container-custom, .main-header__nav__row__right__link, .main-header__nav__row__left__link {
+.px-2, .container-custom, .main-header__nav__row, .main-header__nav__row__right__link, .main-header__nav__row__left__link {
   padding-right: 0.5rem !important;
   padding-left: 0.5rem !important; }
 
@@ -5685,7 +5685,7 @@ textarea.form-control-lg {
   padding-right: 1rem !important;
   padding-left: 1rem !important; }
 
-.px-4, .main-header__nav__row {
+.px-4 {
   padding-right: 1.5rem !important;
   padding-left: 1.5rem !important; }
 
