@@ -28,7 +28,13 @@
             <!-- right menu -->
             <ul class="main-header__nav__row__right">
               <li class="ps-1 pe-0 d-md-none">
-                <a href="" class="main-header__nav__row__left__link">
+                <a
+                  href=""
+                  class="main-header__nav__row__left__link"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#mobile-menu"
+                  aria-controls="offcanvasRight"
+                >
                   <i class="fal fa-bars fs-5"></i>
                 </a>
               </li>
@@ -146,6 +152,37 @@
       </div>
     </header>
     <!-- end header -->
+    <!-- start mobile menu -->
+    <!-- <nav class="mobile-menu">
+      <div class="mobile-menu__close-button"></div>
+    </nav> -->
+    <div
+      class="offcanvas offcanvas-end mobile-menu"
+      tabindex="-1"
+      id="mobile-menu"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">منو</h5>
+        <button
+          type="button"
+          class="btn-close text-reset btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="mobile-menu__list">
+          <li><a href="#" class="mobile-menu__list__link">شال</a></li>
+          <li><a href="#" class="mobile-menu__list__link">روسری</a></li>
+          <li><a href="#" class="mobile-menu__list__link">ارتباط با ما</a></li>
+          <li>
+            <a href="#" class="mobile-menu__list__link">شال دو رو بهاره</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end mobile menu -->
     <!-- script js -->
     <script src="./js/main.js"></script>
   </body>

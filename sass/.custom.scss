@@ -20,6 +20,10 @@ body {
   font-family: shabnam;
 }
 
+li {
+  list-style: none;
+}
+
 .container-custom {
   @extend .container-lg;
   @extend .px-2;
