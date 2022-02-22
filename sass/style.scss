@@ -227,4 +227,17 @@
       }
     }
   }
+
+  .offcanvas-body {
+    @extend .position-relative;
+  }
+
+  &__image {
+    @extend .position-absolute;
+    @extend .bottom-0;
+    @extend .start-50;
+    @extend .w-75;
+    @extend .translate-middle-x;
+    z-index: -1;
+  }
 }

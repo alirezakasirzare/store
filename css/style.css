@@ -5189,10 +5189,10 @@ textarea.form-control-lg {
 .position-static {
   position: static !important; }
 
-.position-relative, .main-header, .main-header__nav__row__search {
+.position-relative, .main-header, .main-header__nav__row__search, .mobile-menu .offcanvas-body {
   position: relative !important; }
 
-.position-absolute, .main-header__nav, .main-header__nav__row__search input, .main-header__nav__row__search__submit {
+.position-absolute, .main-header__nav, .main-header__nav__row__search input, .main-header__nav__row__search__submit, .mobile-menu__image {
   position: absolute !important; }
 
 .position-fixed {
@@ -5210,7 +5210,7 @@ textarea.form-control-lg {
 .top-100 {
   top: 100% !important; }
 
-.bottom-0 {
+.bottom-0, .mobile-menu__image {
   bottom: 0 !important; }
 
 .bottom-50 {
@@ -5222,7 +5222,7 @@ textarea.form-control-lg {
 .start-0, .main-header__nav, .main-header__nav__row__search input, .main-header__nav__row__search__submit {
   left: 0 !important; }
 
-.start-50 {
+.start-50, .mobile-menu__image {
   left: 50% !important; }
 
 .start-100 {
@@ -5240,7 +5240,7 @@ textarea.form-control-lg {
 .translate-middle {
   transform: translate(-50%, -50%) !important; }
 
-.translate-middle-x {
+.translate-middle-x, .mobile-menu__image {
   transform: translateX(-50%) !important; }
 
 .translate-middle-y, .main-header__nav, .main-header__nav__row__search input, .main-header__nav__row__search__submit {
@@ -5324,7 +5324,7 @@ textarea.form-control-lg {
 .w-50, .mobile-menu .mobile-menu__list.mobile-menu__list--login .mobile-menu__list__item {
   width: 50% !important; }
 
-.w-75 {
+.w-75, .mobile-menu__image {
   width: 75% !important; }
 
 .w-100, .main-header__nav, .main-header__nav__row__search, .main-header__nav__row__search input, .mobile-menu__list, .mobile-menu__list__link {
@@ -8011,3 +8011,5 @@ li {
     background-color: rgba(233, 236, 239, 0.3); }
     .mobile-menu__list__link:hover {
       background-color: rgba(233, 236, 239, 0.4); }
+  .mobile-menu__image {
+    z-index: -1; }
