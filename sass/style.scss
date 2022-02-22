@@ -194,14 +194,13 @@
     @extend .w-100;
     @extend .p-0;
     @extend .gap-1;
-    display: flex;
-    flex-direction: column;
+    @extend .d-flex;
+    @extend .flex-column;
 
     &__link {
       @extend .w-100;
       @extend .d-block;
       @extend .rounded;
-      // @extend .mb-1;
       @extend .py-1;
       color: $white !important;
       @extend .px-3;
@@ -211,6 +210,20 @@
 
       &:hover {
         background-color: rgba($gray-200, 0.4);
+      }
+    }
+  }
+
+  .mobile-menu__list.mobile-menu__list--login {
+    // @extend .bg-primary;
+    @extend .flex-row;
+    .mobile-menu__list__item {
+      @extend .w-50;
+
+      .mobile-menu__list__link {
+        // @extend .w-50;
+        @extend .text-center;
+        // width: 50% !important;
       }
     }
   }
