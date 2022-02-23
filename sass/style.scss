@@ -211,6 +211,31 @@
       &:hover {
         background-color: #cc9ea8;
       }
+
+      &--icon {
+        @extend .d-flex;
+        @extend .justify-content-between;
+
+        &__item {
+          @extend .d-flex;
+          @extend .justify-content-center;
+          @extend .align-items-center;
+          @extend .rounded-circle;
+          @extend .border;
+          @extend .border-2;
+          @extend .fs-4;
+          border-color: rgba(#fff, 0.35) !important;
+          width: 25px;
+          height: 25px;
+          transform: rotate(180deg);
+          transition: 0.4s ease transform;
+        }
+      }
+      &.collapsed {
+        .mobile-menu__list__link--icon__item {
+          transform: rotate(0deg);
+        }
+      }
     }
 
     .mobile-collapse {
