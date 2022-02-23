@@ -287,3 +287,9 @@
     z-index: -1;
   }
 }
+
+// main section of page
+.main-section {
+  @extend .container-custom;
+  margin-top: 100px;
+}
