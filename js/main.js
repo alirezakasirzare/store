@@ -68,7 +68,7 @@ function clickOutsideHandel(element, doingFunction) {
   });
 }
 
-// carousel
+// big carousel
 const bigSlider = tns({
   container: "#big-slider",
   items: 1,
@@ -76,8 +76,10 @@ const bigSlider = tns({
   mouseDrag: true,
   nav: false,
   controlsContainer: "#custom-control",
+  loop: false,
 });
 
+// small carousel
 const smallSlider = tns({
   container: "#small-slider",
   items: 3,
@@ -85,6 +87,25 @@ const smallSlider = tns({
   mouseDrag: true,
   nav: false,
   controls: false,
-  center: true,
+  // center: true,
   edgePadding: 10,
+  loop: false,
 });
+
+bigSlider.events.on("transitionStart", removeActiveItemaInSmallSlider);
+bigSlider.events.on("transitionEnd", changeSmallSlider);
+
+function changeSmallSlider(e) {
+  smallSlider.goTo(e.displayIndex - 1);
+  smallSlider
+    .getInfo()
+    .slideItems[e.displayIndex - 1].classList.add(
+      "small-slider__item-container--active"
+    );
+}
+
+function removeActiveItemaInSmallSlider(e) {
+  Array.from(smallSlider.getInfo().slideItems).forEach((item) => {
+    item.classList.remove("small-slider__item-container--active");
+  });
+}
