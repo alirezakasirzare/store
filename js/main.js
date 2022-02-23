@@ -85,4 +85,6 @@ const smallSlider = tns({
   mouseDrag: true,
   nav: false,
   controls: false,
+  center: true,
+  edgePadding: 10,
 });

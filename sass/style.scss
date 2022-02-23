@@ -348,9 +348,27 @@
     // small slider
     .small-slider {
       cursor: grab;
-      .small-slider__item {
-        @extend .w-100;
-        aspect-ratio: 1 / 1;
+
+      &__item-container {
+        @extend .opacity-75;
+        transition: 0.4s ease opacity;
+
+        &--active {
+          @extend .border;
+          @extend .border-3;
+          @extend .border-primary;
+          @extend .rounded-3;
+          @extend .opacity-100;
+          @extend .overflow-hidden;
+        }
+        .small-slider__item {
+          @extend .w-100;
+          aspect-ratio: 1 / 1;
+        }
+
+        &:hover {
+          @extend .opacity-100;
+        }
       }
     }
   }
