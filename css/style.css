@@ -5130,7 +5130,7 @@ textarea.form-control-lg {
 .opacity-75, .main-section .sliders-container .small-slider__item-container {
   opacity: 0.75 !important; }
 
-.opacity-100, .main-section .sliders-container .small-slider__item-container--active {
+.opacity-100, .main-section .sliders-container .small-slider__item-container--active, .main-section .sliders-container .small-slider__item-container:hover {
   opacity: 1 !important; }
 
 .overflow-auto {

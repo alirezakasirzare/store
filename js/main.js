@@ -87,10 +87,11 @@ const smallSlider = tns({
   mouseDrag: true,
   nav: false,
   controls: false,
-  // center: true,
   edgePadding: 10,
   loop: false,
 });
+
+// handel the chnage item event of big slider and change the active item of small slider
 
 bigSlider.events.on("transitionStart", removeActiveItemaInSmallSlider);
 bigSlider.events.on("transitionEnd", changeSmallSlider);
@@ -103,9 +104,24 @@ function changeSmallSlider(e) {
       "small-slider__item-container--active"
     );
 }
-
-function removeActiveItemaInSmallSlider(e) {
+function removeActiveItemaInSmallSlider() {
   Array.from(smallSlider.getInfo().slideItems).forEach((item) => {
     item.classList.remove("small-slider__item-container--active");
   });
 }
+
+// handel click the small slider and change the active item
+document
+  .querySelectorAll(".small-slider__item-container")
+  .forEach((item, index) => {
+    let checkX = null;
+    item.addEventListener("mouseup", (e) => {
+      if (e.clientX == checkX) {
+        bigSlider.goTo(index);
+      }
+    });
+
+    item.addEventListener("mousedown", (e) => {
+      checkX = e.clientX;
+    });
+  });

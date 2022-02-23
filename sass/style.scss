@@ -366,9 +366,9 @@
           aspect-ratio: 1 / 1;
         }
 
-        // &:hover {
-        //   @extend .opacity-100;
-        // }
+        &:hover {
+          @extend .opacity-100;
+        }
       }
     }
   }
