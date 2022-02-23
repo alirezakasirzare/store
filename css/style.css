@@ -8035,7 +8035,10 @@ li {
       width: 30px;
       font-size: 35px;
       height: 50px;
-      color: #fff; }
+      color: #fff;
+      transition: 0.4s ease background; }
+      .main-section .sliders-container .big-slider-container__controls__item:hover {
+        background-color: #495057 !important; }
     .main-section .sliders-container .big-slider-container__item {
       aspect-ratio: 1 / 1;
       cursor: grab; }
