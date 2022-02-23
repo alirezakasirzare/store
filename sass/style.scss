@@ -307,29 +307,29 @@
         @extend .w-100;
         @extend .h-100;
 
-        &__item-next {
+        &__item {
           @extend .position-absolute;
           @extend .top-50;
-          @extend .start-0;
           @extend .translate-middle-y;
           @extend .rounded-3;
           @extend .d-flex;
           @extend .justify-content-center;
           @extend .align-items-center;
           @extend .rounded-3;
+          @extend .bg-secondary;
+          cursor: pointer;
           z-index: 2;
           width: 30px;
           font-size: 35px;
           height: 50px;
-          background-color: blue;
           color: #fff;
         }
-        &__item-prev {
-          @extend .translate-middle-y;
-          @extend .position-absolute;
-          @extend .top-50;
+
+        &__item--next {
+          @extend .start-0;
+        }
+        &__item--prev {
           @extend .end-0;
-          z-index: 2;
         }
       }
       &__item {
