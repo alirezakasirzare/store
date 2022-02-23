@@ -295,8 +295,10 @@
 
   .sliders-container {
     @extend .col-5;
+    @extend .d-flex;
+    @extend .flex-column;
     direction: ltr;
-
+    // bug slider
     .big-slider-container {
       @extend .position-relative;
 
@@ -336,6 +338,14 @@
         @extend .w-100;
         aspect-ratio: 1 / 1;
         cursor: grab;
+      }
+    }
+    // small slider
+    .small-slider {
+      cursor: grab;
+      .small-slider__item {
+        @extend .w-100;
+        aspect-ratio: 1 / 1;
       }
     }
   }

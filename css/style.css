@@ -5166,7 +5166,7 @@ textarea.form-control-lg {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, .main-header__nav__row, .main-header__nav__row__right, .main-header__nav__row__right__link, .main-header__nav__row__left, .main-header__nav__row__left__link, .main-header__nav .open-search .main-header__nav__row__search, .mobile-menu__list, .mobile-menu__list__link--icon, .mobile-menu__list__link--icon__item, .main-section .sliders-container .big-slider-container__controls__item {
+.d-flex, .main-header__nav__row, .main-header__nav__row__right, .main-header__nav__row__right__link, .main-header__nav__row__left, .main-header__nav__row__left__link, .main-header__nav .open-search .main-header__nav__row__search, .mobile-menu__list, .mobile-menu__list__link--icon, .mobile-menu__list__link--icon__item, .main-section .sliders-container, .main-section .sliders-container .big-slider-container__controls__item {
   display: flex !important; }
 
 .d-inline-flex {
@@ -5328,7 +5328,7 @@ textarea.form-control-lg {
 .w-75, .mobile-menu__image {
   width: 75% !important; }
 
-.w-100, .main-header__nav, .main-header__nav__row__search, .main-header__nav__row__search input, .mobile-menu__list, .mobile-menu__list__link, .main-section .sliders-container .big-slider-container__controls, .main-section .sliders-container .big-slider-container__item {
+.w-100, .main-header__nav, .main-header__nav__row__search, .main-header__nav__row__search input, .mobile-menu__list, .mobile-menu__list__link, .main-section .sliders-container .big-slider-container__controls, .main-section .sliders-container .big-slider-container__item, .main-section .sliders-container .small-slider .small-slider__item {
   width: 100% !important; }
 
 .w-auto {
@@ -5373,7 +5373,7 @@ textarea.form-control-lg {
 .flex-row, .mobile-menu .mobile-menu__list.mobile-menu__list--login {
   flex-direction: row !important; }
 
-.flex-column, .mobile-menu__list {
+.flex-column, .mobile-menu__list, .main-section .sliders-container {
   flex-direction: column !important; }
 
 .flex-row-reverse {
@@ -8039,3 +8039,7 @@ li {
     .main-section .sliders-container .big-slider-container__item {
       aspect-ratio: 1 / 1;
       cursor: grab; }
+    .main-section .sliders-container .small-slider {
+      cursor: grab; }
+      .main-section .sliders-container .small-slider .small-slider__item {
+        aspect-ratio: 1 / 1; }

@@ -69,12 +69,20 @@ function clickOutsideHandel(element, doingFunction) {
 }
 
 // carousel
-var slider = tns({
+const bigSlider = tns({
   container: "#big-slider",
   items: 1,
   slideBy: "page",
   mouseDrag: true,
   nav: false,
   controlsContainer: "#custom-control",
-  // autoplayButtonOutput: false,
+});
+
+const smallSlider = tns({
+  container: "#small-slider",
+  items: 3,
+  slideBy: "page",
+  mouseDrag: true,
+  nav: false,
+  controls: false,
 });
