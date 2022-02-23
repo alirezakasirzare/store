@@ -67,3 +67,13 @@ function clickOutsideHandel(element, doingFunction) {
     }
   });
 }
+
+// carousel
+var slider = tns({
+  container: "#big-slider",
+  items: 1,
+  slideBy: "page",
+  controls: false,
+  nav: false,
+  mouseDrag: true,
+});

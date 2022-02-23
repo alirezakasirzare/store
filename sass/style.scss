@@ -292,4 +292,15 @@
 .main-section {
   @extend .container-custom;
   margin-top: 100px;
+
+  .slider-container {
+    @extend .col-5;
+    direction: ltr;
+
+    &__item {
+      @extend .w-100;
+      aspect-ratio: 1 / 1;
+      cursor: grab;
+    }
+  }
 }

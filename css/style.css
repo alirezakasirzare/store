@@ -600,7 +600,7 @@ progress {
   flex: 0 0 auto;
   width: 33.33333%; }
 
-.col-5 {
+.col-5, .main-section .slider-container {
   flex: 0 0 auto;
   width: 41.66667%; }
 
@@ -5328,7 +5328,7 @@ textarea.form-control-lg {
 .w-75, .mobile-menu__image {
   width: 75% !important; }
 
-.w-100, .main-header__nav, .main-header__nav__row__search, .main-header__nav__row__search input, .mobile-menu__list, .mobile-menu__list__link {
+.w-100, .main-header__nav, .main-header__nav__row__search, .main-header__nav__row__search input, .mobile-menu__list, .mobile-menu__list__link, .main-section .slider-container__item {
   width: 100% !important; }
 
 .w-auto {
@@ -8027,3 +8027,8 @@ li {
 
 .main-section {
   margin-top: 100px; }
+  .main-section .slider-container {
+    direction: ltr; }
+    .main-section .slider-container__item {
+      aspect-ratio: 1 / 1;
+      cursor: grab; }
