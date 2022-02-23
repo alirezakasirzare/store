@@ -206,10 +206,31 @@
       @extend .px-3;
       @extend .w-100;
       text-decoration: none;
-      background-color: rgba($gray-200, 0.3);
+      background-color: #c7929c;
 
       &:hover {
-        background-color: rgba($gray-200, 0.4);
+        background-color: #cc9ea8;
+      }
+    }
+
+    .mobile-collapse {
+      // @extend .border-start;
+      // @extend .border-end;
+      // @extend .border;
+      // @extend .rounded;
+      // @extend .border-3;
+      // @extend .pe-2;
+      @extend .px-0;
+      // @extend .pb-1;
+      // @extend .mt-1;
+      // border-color: #c7929c !important;
+      .mobile-menu__list__link {
+        // background-color: #dda9b4;
+        @extend .border-end;
+        @extend .border-5;
+        @extend .pe-2;
+        // @extend .border-info;
+        border-color: $color-primary-200 !important;
       }
     }
   }
