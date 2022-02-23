@@ -73,7 +73,8 @@ var slider = tns({
   container: "#big-slider",
   items: 1,
   slideBy: "page",
-  controls: false,
-  nav: false,
   mouseDrag: true,
+  nav: false,
+  controlsContainer: "#custom-control",
+  // autoplayButtonOutput: false,
 });
