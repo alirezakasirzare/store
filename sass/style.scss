@@ -326,17 +326,18 @@
           height: 50px;
           color: #fff;
           transition: 0.4s ease background;
-
-          &:hover {
-            background-color: $gray-700 !important;
-          }
         }
 
-        &__item--next {
+        &__item--prev {
           @extend .start-0;
         }
-        &__item--prev {
+        &__item--next {
           @extend .end-0;
+        }
+
+        &__item--disabled {
+          @extend .opacity-50;
+          cursor: auto;
         }
       }
       &__item {
