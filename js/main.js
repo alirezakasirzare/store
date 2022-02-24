@@ -97,12 +97,31 @@ bigSlider.events.on("transitionStart", removeActiveItemaInSmallSlider);
 bigSlider.events.on("transitionEnd", changeSmallSlider);
 
 function changeSmallSlider(e) {
-  smallSlider.goTo(e.displayIndex - 1);
+  // handel arrow prev button disabled
+  if (e.index == 0) {
+    e.prevButton.classList.add(
+      "big-slider-container__controls__item--disabled"
+    );
+  } else {
+    e.prevButton.classList.remove(
+      "big-slider-container__controls__item--disabled"
+    );
+  }
+  // handel arrow next button disabled
+  if (e.index == e.slideCount - 1) {
+    e.nextButton.classList.add(
+      "big-slider-container__controls__item--disabled"
+    );
+  } else {
+    e.nextButton.classList.remove(
+      "big-slider-container__controls__item--disabled"
+    );
+  }
+  // change active item of small slider
+  smallSlider.goTo(e.index);
   smallSlider
     .getInfo()
-    .slideItems[e.displayIndex - 1].classList.add(
-      "small-slider__item-container--active"
-    );
+    .slideItems[e.index].classList.add("small-slider__item-container--active");
 }
 function removeActiveItemaInSmallSlider() {
   Array.from(smallSlider.getInfo().slideItems).forEach((item) => {
