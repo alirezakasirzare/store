@@ -308,6 +308,7 @@
         @extend .top-0;
         @extend .w-100;
         @extend .h-100;
+        background-color: #fff;
 
         &__item {
           @extend .position-absolute;
@@ -353,7 +354,12 @@
         @extend .start-0;
         @extend .top-0;
         @extend .w-100;
+        // @extend .opacity-0;
       }
+
+      // .lightense-wrap img {
+      //   @extend .opacity-100;
+      // }
 
       &__zoom-btn {
         @extend .position-absolute;
