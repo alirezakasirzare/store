@@ -141,22 +141,18 @@ document
   });
 
 // zoom images
-// document.addEventListener("DOMContentLoaded", function () {
-//   new Zooming().listen("img");
-// });
-// Zoomerang.listen("img");
-// Lightense(elements, {
-//   time: 300,
-//   padding: 40,
-//   offset: 40,
-//   keyboard: true,
-//   cubicBezier: 'cubic-bezier(.2, 0, .1, 1)',
-//   background: 'rgba(255, 255, 255, .98)',
-//   zIndex: 2147483647
-// });
-Lightense("#big-slider-zoom");
 
-var bigSliderZoomButton = document.querySelector(
-  ".big-slider-container__zoom-btn"
-);
+Lightense("#big-slider-zooming-item");
+
+const bigSliderZoomButton = document.getElementById("zoom-btn-big-slider");
+const bigSliderZoomingItem = document.getElementById("big-slider-zooming-item");
+
 var tooltip = new bootstrap.Tooltip(bigSliderZoomButton);
+bigSliderZoomButton.addEventListener("click", () => {
+  const informationOfBigSlider = bigSlider.getInfo();
+  bigSliderZoomingItem.src =
+    informationOfBigSlider.slideItems[
+      informationOfBigSlider.index
+    ].querySelector("img").src;
+  bigSliderZoomingItem.click();
+});
