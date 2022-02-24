@@ -53,11 +53,6 @@ function handelSearchForm(e, openMode = true) {
 clickOutsideHandel(document.getElementById("formSearch"), () => {
   handelSearchForm(null, false);
 });
-// function openSearchForm(e) {
-//   e.preventDefault();
-//   const tooglePlace = document.getElementById("toggleSeatchPlace");
-//   tooglePlace.classList.add("open-search");
-// }
 
 function clickOutsideHandel(element, doingFunction) {
   document.addEventListener("click", function (event) {
@@ -144,3 +139,19 @@ document
       checkX = e.clientX;
     });
   });
+
+// zoom images
+// document.addEventListener("DOMContentLoaded", function () {
+//   new Zooming().listen("img");
+// });
+// Zoomerang.listen("img");
+// Lightense(elements, {
+//   time: 300,
+//   padding: 40,
+//   offset: 40,
+//   keyboard: true,
+//   cubicBezier: 'cubic-bezier(.2, 0, .1, 1)',
+//   background: 'rgba(255, 255, 255, .98)',
+//   zIndex: 2147483647
+// });
+Lightense("#big-slider-zoom");

@@ -5193,7 +5193,7 @@ textarea.form-control-lg {
 .position-relative, .main-header, .main-header__nav__row__search, .mobile-menu .offcanvas-body, .main-section .sliders-container .big-slider-container {
   position: relative !important; }
 
-.position-absolute, .main-header__nav, .main-header__nav__row__search input, .main-header__nav__row__search__submit, .mobile-menu__image, .main-section .sliders-container .big-slider-container__controls, .main-section .sliders-container .big-slider-container__controls__item {
+.position-absolute, .main-header__nav, .main-header__nav__row__search input, .main-header__nav__row__search__submit, .mobile-menu__image, .main-section .sliders-container .big-slider-container__controls, .main-section .sliders-container .big-slider-container__controls__item, .main-section .sliders-container .big-slider-container__zoom {
   position: absolute !important; }
 
 .position-fixed {
@@ -5202,7 +5202,7 @@ textarea.form-control-lg {
 .position-sticky {
   position: sticky !important; }
 
-.top-0, .main-section .sliders-container .big-slider-container__controls {
+.top-0, .main-section .sliders-container .big-slider-container__controls, .main-section .sliders-container .big-slider-container__zoom {
   top: 0 !important; }
 
 .top-50, .main-header__nav__row__search input, .main-header__nav__row__search__submit, .main-section .sliders-container .big-slider-container__controls__item {
@@ -5220,7 +5220,7 @@ textarea.form-control-lg {
 .bottom-100 {
   bottom: 100% !important; }
 
-.start-0, .main-header__nav, .main-header__nav__row__search input, .main-header__nav__row__search__submit, .main-section .sliders-container .big-slider-container__controls, .main-section .sliders-container .big-slider-container__controls__item--prev {
+.start-0, .main-header__nav, .main-header__nav__row__search input, .main-header__nav__row__search__submit, .main-section .sliders-container .big-slider-container__controls, .main-section .sliders-container .big-slider-container__controls__item--prev, .main-section .sliders-container .big-slider-container__zoom {
   left: 0 !important; }
 
 .start-50, .mobile-menu__image {
@@ -5328,7 +5328,7 @@ textarea.form-control-lg {
 .w-75, .mobile-menu__image {
   width: 75% !important; }
 
-.w-100, .main-header__nav, .main-header__nav__row__search, .main-header__nav__row__search input, .mobile-menu__list, .mobile-menu__list__link, .main-section .sliders-container .big-slider-container__controls, .main-section .sliders-container .big-slider-container__item, .main-section .sliders-container .small-slider__item-container .small-slider__item {
+.w-100, .main-header__nav, .main-header__nav__row__search, .main-header__nav__row__search input, .mobile-menu__list, .mobile-menu__list__link, .main-section .sliders-container .big-slider-container__controls, .main-section .sliders-container .big-slider-container__item, .main-section .sliders-container .big-slider-container__zoom, .main-section .sliders-container .small-slider__item-container .small-slider__item {
   width: 100% !important; }
 
 .w-auto {

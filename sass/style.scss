@@ -346,6 +346,13 @@
         cursor: grab;
         @extend .user-select-none;
       }
+
+      &__zoom {
+        @extend .position-absolute;
+        @extend .start-0;
+        @extend .top-0;
+        @extend .w-100;
+      }
     }
     // small slider
     .small-slider {
