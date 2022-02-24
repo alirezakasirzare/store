@@ -347,11 +347,32 @@
         @extend .user-select-none;
       }
 
+      // zoom
       &__zoom {
         @extend .position-absolute;
         @extend .start-0;
         @extend .top-0;
         @extend .w-100;
+      }
+
+      &__zoom-btn {
+        @extend .position-absolute;
+        @extend .btn;
+        @extend .btn-light;
+        @extend .d-flex;
+        @extend .justify-content-center;
+        @extend .align-items-center;
+        @extend .rounded-circle;
+        z-index: 10;
+        background-color: $gray-300;
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+
+        &:hover {
+          background-color: $gray-200 !important;
+        }
       }
     }
     // small slider

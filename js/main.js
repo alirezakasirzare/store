@@ -155,3 +155,8 @@ document
 //   zIndex: 2147483647
 // });
 Lightense("#big-slider-zoom");
+
+var bigSliderZoomButton = document.querySelector(
+  ".big-slider-container__zoom-btn"
+);
+var tooltip = new bootstrap.Tooltip(bigSliderZoomButton);
