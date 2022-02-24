@@ -410,3 +410,17 @@
     }
   }
 }
+
+// start content
+.breadcrumb-container {
+  @extend .d-flex;
+  @extend .gap-3;
+}
+
+.show-primary {
+  @extend .p-1;
+  @extend .rounded-pill;
+  background-color: $color-primary-500;
+  color: #fff;
+  font-size: 14px;
+}

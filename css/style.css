@@ -5192,7 +5192,7 @@ textarea.form-control-lg {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, .main-header__nav__row, .main-header__nav__row__right, .main-header__nav__row__right__link, .main-header__nav__row__left, .main-header__nav__row__left__link, .main-header__nav .open-search .main-header__nav__row__search, .mobile-menu__list, .mobile-menu__list__link--icon, .mobile-menu__list__link--icon__item, .main-section .sliders-container, .main-section .sliders-container .big-slider-container__controls__item, .main-section .sliders-container .big-slider-container__zoom-btn {
+.d-flex, .main-header__nav__row, .main-header__nav__row__right, .main-header__nav__row__right__link, .main-header__nav__row__left, .main-header__nav__row__left__link, .main-header__nav .open-search .main-header__nav__row__search, .mobile-menu__list, .mobile-menu__list__link--icon, .mobile-menu__list__link--icon__item, .main-section .sliders-container, .main-section .sliders-container .big-slider-container__controls__item, .main-section .sliders-container .big-slider-container__zoom-btn, .breadcrumb-container {
   display: flex !important; }
 
 .d-inline-flex {
@@ -5438,7 +5438,7 @@ textarea.form-control-lg {
 .gap-2, .main-header__nav__row__right__link {
   gap: 0.5rem !important; }
 
-.gap-3 {
+.gap-3, .breadcrumb-container {
   gap: 1rem !important; }
 
 .gap-4 {
@@ -5704,7 +5704,7 @@ textarea.form-control-lg {
 .p-0, .mobile-menu__list {
   padding: 0 !important; }
 
-.p-1 {
+.p-1, .show-primary {
   padding: 0.25rem !important; }
 
 .p-2 {
@@ -6103,7 +6103,7 @@ textarea.form-control-lg {
 .rounded-circle, .mobile-menu__list__link--icon__item, .main-section .sliders-container .big-slider-container__zoom-btn {
   border-radius: 50% !important; }
 
-.rounded-pill {
+.rounded-pill, .show-primary {
   border-radius: 50rem !important; }
 
 .rounded-top {
@@ -8085,3 +8085,8 @@ li {
         transition: 0.4s ease opacity; }
         .main-section .sliders-container .small-slider__item-container .small-slider__item {
           aspect-ratio: 1 / 1; }
+
+.show-primary {
+  background-color: #be7783;
+  color: #fff;
+  font-size: 14px; }
