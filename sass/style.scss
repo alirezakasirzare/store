@@ -344,6 +344,7 @@
         @extend .w-100;
         aspect-ratio: 1 / 1;
         cursor: grab;
+        @extend .user-select-none;
       }
     }
     // small slider
@@ -365,6 +366,7 @@
         .small-slider__item {
           @extend .w-100;
           aspect-ratio: 1 / 1;
+          @extend .user-select-none;
         }
 
         &:hover {

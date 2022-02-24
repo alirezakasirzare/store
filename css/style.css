@@ -6050,7 +6050,7 @@ textarea.form-control-lg {
 .user-select-auto {
   user-select: auto !important; }
 
-.user-select-none {
+.user-select-none, .main-section .sliders-container .big-slider-container__item, .main-section .sliders-container .small-slider__item-container .small-slider__item {
   user-select: none !important; }
 
 .pe-none {
