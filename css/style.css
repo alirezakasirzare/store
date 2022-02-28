@@ -5626,7 +5626,7 @@ textarea.form-control-lg {
 .mt-2 {
   margin-top: 0.5rem !important; }
 
-.mt-3, .content-product__title {
+.mt-3, .content-product__title, .content-product__price {
   margin-top: 1rem !important; }
 
 .mt-4 {
@@ -5848,7 +5848,7 @@ textarea.form-control-lg {
 .fs-2 {
   font-size: calc(1.325rem + 0.9vw) !important; }
 
-.fs-3, .content-product__title h1, .content-product__title .h1 {
+.fs-3, .content-product__title h1, .content-product__title .h1, .content-product__price span {
   font-size: calc(1.3rem + 0.6vw) !important; }
 
 .fs-4, .mobile-menu__list__link--icon__item {
@@ -5875,7 +5875,7 @@ textarea.form-control-lg {
 .fw-normal {
   font-weight: 400 !important; }
 
-.fw-bold, .content-product__title h1, .content-product__title .h1 {
+.fw-bold, .content-product__title h1, .content-product__title .h1, .content-product__price span {
   font-weight: 700 !important; }
 
 .fw-bolder {
@@ -7833,7 +7833,7 @@ textarea.form-control-lg {
     font-size: 2.5rem !important; }
   .fs-2 {
     font-size: 2rem !important; }
-  .fs-3, .content-product__title h1, .content-product__title .h1 {
+  .fs-3, .content-product__title h1, .content-product__title .h1, .content-product__price span {
     font-size: 1.75rem !important; }
   .fs-4, .mobile-menu__list__link--icon__item {
     font-size: 1.5rem !important; } }
@@ -8096,3 +8096,6 @@ li {
 
 .content-product__title h1, .content-product__title .h1 {
   color: #495057; }
+
+.content-product__price {
+  color: #c4848f; }

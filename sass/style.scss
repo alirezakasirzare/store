@@ -446,4 +446,14 @@
       color: $gray-700;
     }
   }
+
+  &__price {
+    @extend .mt-3;
+    color: $color-primary;
+
+    span {
+      @extend .fs-3;
+      @extend .fw-bold;
+    }
+  }
 }
