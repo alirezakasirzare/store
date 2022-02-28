@@ -418,10 +418,15 @@
 .breadcrumb-container {
   @extend .d-flex;
   @extend .gap-3;
+
+  &__link {
+    @extend .link-secondary;
+  }
 }
 
 .show-primary {
-  @extend .p-1;
+  @extend .px-2;
+  @extend .py-1;
   @extend .rounded-pill;
   background-color: $color-primary-500;
   color: #fff;

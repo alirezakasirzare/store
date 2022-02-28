@@ -4961,9 +4961,9 @@ textarea.form-control-lg {
   .link-primary:hover, .link-primary:focus {
     color: #0a58ca; }
 
-.link-secondary {
+.link-secondary, .breadcrumb-container__link {
   color: #6c757d; }
-  .link-secondary:hover, .link-secondary:focus {
+  .link-secondary:hover, .breadcrumb-container__link:hover, .link-secondary:focus, .breadcrumb-container__link:focus {
     color: #565e64; }
 
 .link-success {
@@ -5704,7 +5704,7 @@ textarea.form-control-lg {
 .p-0, .mobile-menu__list {
   padding: 0 !important; }
 
-.p-1, .show-primary {
+.p-1 {
   padding: 0.25rem !important; }
 
 .p-2 {
@@ -5727,7 +5727,7 @@ textarea.form-control-lg {
   padding-right: 0.25rem !important;
   padding-left: 0.25rem !important; }
 
-.px-2, .container-custom, .main-section, .main-header__nav__row, .main-header__nav__row__right__link, .main-header__nav__row__left__link {
+.px-2, .container-custom, .main-section, .main-header__nav__row, .main-header__nav__row__right__link, .main-header__nav__row__left__link, .show-primary {
   padding-right: 0.5rem !important;
   padding-left: 0.5rem !important; }
 
@@ -5747,7 +5747,7 @@ textarea.form-control-lg {
   padding-top: 0 !important;
   padding-bottom: 0 !important; }
 
-.py-1, .main-header__nav__row, .main-header__nav__row__right__link, .main-header__nav__row__left__link, .main-header__nav__row__search__submit, .mobile-menu__list__link {
+.py-1, .main-header__nav__row, .main-header__nav__row__right__link, .main-header__nav__row__left__link, .main-header__nav__row__search__submit, .mobile-menu__list__link, .show-primary {
   padding-top: 0.25rem !important;
   padding-bottom: 0.25rem !important; }
 
