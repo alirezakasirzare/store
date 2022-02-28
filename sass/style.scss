@@ -187,6 +187,7 @@
     @include fadeAnimation;
   }
 }
+
 // mobile menu
 .mobile-menu {
   @extend .text-light;
@@ -452,8 +453,25 @@
     color: $color-primary;
 
     span {
-      @extend .fs-3;
+      @extend .fs-2;
       @extend .fw-bold;
+    }
+  }
+
+  &__inputs-container {
+    @extend .mt-5;
+    // @extend .fs-3;
+
+    &__input-container {
+      @extend .d-flex;
+      @extend .flex-column;
+      @extend .gap-2;
+      @extend .align-items-start;
+
+      &__input {
+        @extend .form-select;
+        @extend .form-select-lg;
+      }
     }
   }
 }
