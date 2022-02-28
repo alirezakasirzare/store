@@ -4972,9 +4972,9 @@ textarea.form-control-lg {
   .link-primary:hover, .link-primary:focus {
     color: #0a58ca; }
 
-.link-secondary, .breadcrumb-container__link {
+.link-secondary, .breadcrumb-container__link, .content-product__buttons__media__item {
   color: #6c757d; }
-  .link-secondary:hover, .breadcrumb-container__link:hover, .link-secondary:focus, .breadcrumb-container__link:focus {
+  .link-secondary:hover, .breadcrumb-container__link:hover, .content-product__buttons__media__item:hover, .link-secondary:focus, .breadcrumb-container__link:focus, .content-product__buttons__media__item:focus {
     color: #565e64; }
 
 .link-success {
@@ -5203,7 +5203,7 @@ textarea.form-control-lg {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, .main-header__nav__row, .main-header__nav__row__right, .main-header__nav__row__right__link, .main-header__nav__row__left, .main-header__nav__row__left__link, .main-header__nav .open-search .main-header__nav__row__search, .mobile-menu__list, .mobile-menu__list__link--icon, .mobile-menu__list__link--icon__item, .main-section .sliders-container, .main-section .sliders-container .big-slider-container__controls__item, .main-section .sliders-container .big-slider-container__zoom-btn, .breadcrumb-container, .content-product, .content-product__inputs-container__input-container {
+.d-flex, .main-header__nav__row, .main-header__nav__row__right, .main-header__nav__row__right__link, .main-header__nav__row__left, .main-header__nav__row__left__link, .main-header__nav .open-search .main-header__nav__row__search, .mobile-menu__list, .mobile-menu__list__link--icon, .mobile-menu__list__link--icon__item, .main-section .sliders-container, .main-section .sliders-container .big-slider-container__controls__item, .main-section .sliders-container .big-slider-container__zoom-btn, .breadcrumb-container, .content-product, .content-product__inputs-container__input-container, .content-product__buttons, .content-product__buttons__media {
   display: flex !important; }
 
 .d-inline-flex {
@@ -5446,7 +5446,7 @@ textarea.form-control-lg {
 .gap-1, .mobile-menu__list {
   gap: 0.25rem !important; }
 
-.gap-2, .main-header__nav__row__right__link, .content-product__inputs-container__input-container {
+.gap-2, .main-header__nav__row__right__link, .content-product__inputs-container__input-container, .content-product__buttons__media {
   gap: 0.5rem !important; }
 
 .gap-3, .breadcrumb-container {
@@ -5467,7 +5467,7 @@ textarea.form-control-lg {
 .justify-content-center, .mobile-menu__list__link--icon__item, .main-section .sliders-container .big-slider-container__controls__item, .main-section .sliders-container .big-slider-container__zoom-btn {
   justify-content: center !important; }
 
-.justify-content-between, .main-header__nav__row, .mobile-menu__list__link--icon {
+.justify-content-between, .main-header__nav__row, .mobile-menu__list__link--icon, .content-product__buttons {
   justify-content: space-between !important; }
 
 .justify-content-around {
@@ -5482,7 +5482,7 @@ textarea.form-control-lg {
 .align-items-end {
   align-items: flex-end !important; }
 
-.align-items-center, .main-header__nav__row__right, .main-header__nav__row__right__link, .main-header__nav__row__left, .main-header__nav__row__left__link, .main-header__nav__row__search, .mobile-menu__list__link--icon__item, .main-section .sliders-container .big-slider-container__controls__item, .main-section .sliders-container .big-slider-container__zoom-btn {
+.align-items-center, .main-header__nav__row__right, .main-header__nav__row__right__link, .main-header__nav__row__left, .main-header__nav__row__left__link, .main-header__nav__row__search, .mobile-menu__list__link--icon__item, .main-section .sliders-container .big-slider-container__controls__item, .main-section .sliders-container .big-slider-container__zoom-btn, .content-product__buttons {
   align-items: center !important; }
 
 .align-items-baseline {
@@ -5640,7 +5640,7 @@ textarea.form-control-lg {
 .mt-3, .content-product__title, .content-product__price {
   margin-top: 1rem !important; }
 
-.mt-4 {
+.mt-4, .content-product__buttons {
   margin-top: 1.5rem !important; }
 
 .mt-5, .content-product__inputs-container {
@@ -5862,7 +5862,7 @@ textarea.form-control-lg {
 .fs-3, .content-product__title h1, .content-product__title .h1 {
   font-size: calc(1.3rem + 0.6vw) !important; }
 
-.fs-4, .mobile-menu__list__link--icon__item {
+.fs-4, .mobile-menu__list__link--icon__item, .content-product__buttons__media__item {
   font-size: calc(1.275rem + 0.3vw) !important; }
 
 .fs-5 {
@@ -7846,7 +7846,7 @@ textarea.form-control-lg {
     font-size: 2rem !important; }
   .fs-3, .content-product__title h1, .content-product__title .h1 {
     font-size: 1.75rem !important; }
-  .fs-4, .mobile-menu__list__link--icon__item {
+  .fs-4, .mobile-menu__list__link--icon__item, .content-product__buttons__media__item {
     font-size: 1.5rem !important; } }
 
 @media print {
@@ -7903,6 +7903,34 @@ li {
   .btn-outline-primary-custom:disabled, .main-header__nav__row__search__submit:disabled, .btn-outline-primary-custom.disabled, .disabled.main-header__nav__row__search__submit {
     color: #c4848f;
     background-color: transparent; }
+
+.btn-custom-submit {
+  color: #fff;
+  background-color: #3ecf8e;
+  border-color: rgba(62, 207, 142, 0.4); }
+  .btn-custom-submit:hover {
+    color: #fff;
+    background-color: #35b079;
+    border-color: rgba(31, 104, 71, 0.52); }
+  .btn-check:focus + .btn-custom-submit, .btn-custom-submit:focus {
+    color: #fff;
+    background-color: #35b079;
+    border-color: rgba(31, 104, 71, 0.52);
+    box-shadow: 0 0 0 0.25rem rgba(142, 227, 189, 0.5); }
+  .btn-check:checked + .btn-custom-submit,
+  .btn-check:active + .btn-custom-submit, .btn-custom-submit:active, .btn-custom-submit.active,
+  .show > .btn-custom-submit.dropdown-toggle {
+    color: #fff;
+    background-color: #32a672;
+    border-color: rgba(27, 89, 61, 0.55); }
+    .btn-check:checked + .btn-custom-submit:focus,
+    .btn-check:active + .btn-custom-submit:focus, .btn-custom-submit:active:focus, .btn-custom-submit.active:focus,
+    .show > .btn-custom-submit.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.25rem rgba(142, 227, 189, 0.5); }
+  .btn-custom-submit:disabled, .btn-custom-submit.disabled {
+    color: #000;
+    background-color: #3ecf8e;
+    border-color: rgba(62, 207, 142, 0.4); }
 
 @keyframes slidenavAnimation {
   from {
@@ -8110,3 +8138,6 @@ li {
 
 .content-product__price {
   color: #c4848f; }
+
+.content-product__buttons__media__item {
+  text-decoration: none !important; }

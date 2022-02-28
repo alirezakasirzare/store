@@ -49,6 +49,31 @@ li {
   @include button-outline-variant($color-primary, #fff, $active-color: #fff);
   // color: #fff;
 }
+.btn-custom-submit {
+  @include button-variant(
+    #3ecf8e,
+    rgba(#3ecf8e, 0.4),
+    $color: #fff,
+    $active-color: #fff,
+    $hover-color: #fff
+  );
+  // color: #fff;
+}
+// @mixin button-variant(
+//   $background,
+//   $border,
+//   $color: color-contrast($background),
+//   $hover-background: if($color == $color-contrast-light, shade-color($background, $btn-hover-bg-shade-amount), tint-color($background, $btn-hover-bg-tint-amount)),
+//   $hover-border: if($color == $color-contrast-light, shade-color($border, $btn-hover-border-shade-amount), tint-color($border, $btn-hover-border-tint-amount)),
+//   $hover-color: color-contrast($hover-background),
+//   $active-background: if($color == $color-contrast-light, shade-color($background, $btn-active-bg-shade-amount), tint-color($background, $btn-active-bg-tint-amount)),
+//   $active-border: if($color == $color-contrast-light, shade-color($border, $btn-active-border-shade-amount), tint-color($border, $btn-active-border-tint-amount)),
+//   $active-color: color-contrast($active-background),
+//   $disabled-background: $background,
+//   $disabled-border: $border,
+//   $disabled-color: color-contrast($disabled-background)
+// )
+
 @keyframes slidenavAnimation {
   from {
     opacity: 0;

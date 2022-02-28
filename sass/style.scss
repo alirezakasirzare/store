@@ -474,4 +474,21 @@
       }
     }
   }
+
+  &__buttons {
+    @extend .mt-4;
+    @extend .d-flex;
+    @extend .justify-content-between;
+    @extend .align-items-center;
+
+    &__media {
+      @extend .d-flex;
+      @extend .gap-2;
+      &__item {
+        @extend .link-secondary;
+        @extend .fs-4;
+        text-decoration: none !important;
+      }
+    }
+  }
 }
