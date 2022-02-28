@@ -297,6 +297,7 @@
     @extend .col-5;
     @extend .d-flex;
     @extend .flex-column;
+    /*rtl:ignore*/
     direction: ltr;
     // bug slider
     .big-slider-container {

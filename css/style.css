@@ -8054,6 +8054,7 @@ li {
 .main-section {
   margin-top: 100px; }
   .main-section .sliders-container {
+    /*rtl:ignore*/
     direction: ltr; }
     .main-section .sliders-container .big-slider-container__controls {
       background-color: #fff; }
