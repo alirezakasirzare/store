@@ -5177,7 +5177,7 @@ textarea.form-control-lg {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, .main-header__nav__row, .main-header__nav__row__right, .main-header__nav__row__right__link, .main-header__nav__row__left, .main-header__nav__row__left__link, .main-header__nav .open-search .main-header__nav__row__search, .mobile-menu__list, .mobile-menu__list__link--icon, .mobile-menu__list__link--icon__item, .main-section .sliders-container, .main-section .sliders-container .big-slider-container__controls__item, .main-section .sliders-container .big-slider-container__zoom-btn, .breadcrumb-container {
+.d-flex, .main-header__nav__row, .main-header__nav__row__right, .main-header__nav__row__right__link, .main-header__nav__row__left, .main-header__nav__row__left__link, .main-header__nav .open-search .main-header__nav__row__search, .mobile-menu__list, .mobile-menu__list__link--icon, .mobile-menu__list__link--icon__item, .main-section .sliders-container, .main-section .sliders-container .big-slider-container__controls__item, .main-section .sliders-container .big-slider-container__zoom-btn, .breadcrumb-container, .content-product {
   display: flex !important; }
 
 .d-inline-flex {
@@ -5384,7 +5384,7 @@ textarea.form-control-lg {
 .flex-row, .mobile-menu .mobile-menu__list.mobile-menu__list--login {
   flex-direction: row !important; }
 
-.flex-column, .mobile-menu__list, .main-section .sliders-container {
+.flex-column, .mobile-menu__list, .main-section .sliders-container, .content-product {
   flex-direction: column !important; }
 
 .flex-row-reverse {
@@ -5611,7 +5611,7 @@ textarea.form-control-lg {
 .mt-2 {
   margin-top: 0.5rem !important; }
 
-.mt-3 {
+.mt-3, .content-product__title {
   margin-top: 1rem !important; }
 
 .mt-4 {
@@ -5833,7 +5833,7 @@ textarea.form-control-lg {
 .fs-2 {
   font-size: calc(1.325rem + 0.9vw) !important; }
 
-.fs-3 {
+.fs-3, .content-product__title h1, .content-product__title .h1 {
   font-size: calc(1.3rem + 0.6vw) !important; }
 
 .fs-4, .mobile-menu__list__link--icon__item {
@@ -5860,7 +5860,7 @@ textarea.form-control-lg {
 .fw-normal {
   font-weight: 400 !important; }
 
-.fw-bold {
+.fw-bold, .content-product__title h1, .content-product__title .h1 {
   font-weight: 700 !important; }
 
 .fw-bolder {
@@ -7811,7 +7811,7 @@ textarea.form-control-lg {
     font-size: 2.5rem !important; }
   .fs-2 {
     font-size: 2rem !important; }
-  .fs-3 {
+  .fs-3, .content-product__title h1, .content-product__title .h1 {
     font-size: 1.75rem !important; }
   .fs-4, .mobile-menu__list__link--icon__item {
     font-size: 1.5rem !important; } }
@@ -8068,3 +8068,6 @@ li {
   background-color: #be7783;
   color: #fff;
   font-size: 14px; }
+
+.content-product__title h1, .content-product__title .h1 {
+  color: #495057; }

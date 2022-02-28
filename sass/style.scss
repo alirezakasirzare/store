@@ -432,3 +432,18 @@
   color: #fff;
   font-size: 14px;
 }
+
+.content-product {
+  @extend .d-flex;
+  @extend .flex-column;
+
+  &__title {
+    @extend .mt-3;
+
+    h1 {
+      @extend .fs-3;
+      @extend .fw-bold;
+      color: $gray-700;
+    }
+  }
+}
