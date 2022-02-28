@@ -5643,7 +5643,7 @@ textarea.form-control-lg {
 .mt-4, .content-product__buttons {
   margin-top: 1.5rem !important; }
 
-.mt-5, .content-product__inputs-container {
+.mt-5, .content-product__inputs-container, .content-product__info {
   margin-top: 3rem !important; }
 
 .mt-auto {
@@ -5886,7 +5886,7 @@ textarea.form-control-lg {
 .fw-normal {
   font-weight: 400 !important; }
 
-.fw-bold, .content-product__title h1, .content-product__title .h1, .content-product__price span {
+.fw-bold, .content-product__title h1, .content-product__title .h1, .content-product__price span, .content-product__info {
   font-weight: 700 !important; }
 
 .fw-bolder {
@@ -5910,7 +5910,7 @@ textarea.form-control-lg {
 .text-end {
   text-align: right !important; }
 
-.text-center, .mobile-menu .mobile-menu__list.mobile-menu__list--login .mobile-menu__list__item .mobile-menu__list__link {
+.text-center, .mobile-menu .mobile-menu__list.mobile-menu__list--login .mobile-menu__list__item .mobile-menu__list__link, .content-product__info {
   text-align: center !important; }
 
 .text-decoration-none, .main-header__nav__row__right__link, .main-header__nav__row__left__link {
@@ -8141,3 +8141,7 @@ li {
 
 .content-product__buttons__media__item {
   text-decoration: none !important; }
+
+.content-product__info {
+  text-decoration: underline;
+  color: #343a40; }

@@ -491,4 +491,12 @@
       }
     }
   }
+
+  &__info {
+    @extend .text-center;
+    @extend .fw-bold;
+    @extend .mt-5;
+    text-decoration: underline;
+    color: $gray-800;
+  }
 }
