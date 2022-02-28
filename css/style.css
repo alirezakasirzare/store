@@ -5246,7 +5246,7 @@ textarea.form-control-lg {
 .bottom-100 {
   bottom: 100% !important; }
 
-.start-0, .main-header__nav, .main-header__nav__row__search input, .main-header__nav__row__search__submit, .main-section .sliders-container .big-slider-container__controls, .main-section .sliders-container .big-slider-container__controls__item--next, .main-section .sliders-container .big-slider-container__zoom {
+.start-0, .main-header__nav, .main-header__nav__row__search input, .main-section .sliders-container .big-slider-container__controls, .main-section .sliders-container .big-slider-container__controls__item--next, .main-section .sliders-container .big-slider-container__zoom {
   left: 0 !important; }
 
 .start-50, .mobile-menu__image {
@@ -5255,7 +5255,7 @@ textarea.form-control-lg {
 .start-100 {
   left: 100% !important; }
 
-.end-0, .main-section .sliders-container .big-slider-container__controls__item--prev {
+.end-0, .main-header__nav__row__search__submit, .main-section .sliders-container .big-slider-container__controls__item--prev {
   right: 0 !important; }
 
 .end-50 {
@@ -5641,7 +5641,7 @@ textarea.form-control-lg {
 .me-0 {
   margin-right: 0 !important; }
 
-.me-1 {
+.me-1, .main-header__nav__row__search__submit {
   margin-right: 0.25rem !important; }
 
 .me-2 {
@@ -5683,7 +5683,7 @@ textarea.form-control-lg {
 .ms-0, .main-header__nav__row__search {
   margin-left: 0 !important; }
 
-.ms-1, .main-header__nav__row__search__submit {
+.ms-1 {
   margin-left: 0.25rem !important; }
 
 .ms-2 {
@@ -7997,7 +7997,9 @@ li {
         .main-header__nav__row__search input {
           border-style: none !important;
           box-shadow: none !important;
-          padding-left: 100px !important; }
+          /*rtl:begin:ignore*/
+          padding-left: 100px !important;
+          /*rtl:end:ignore*/ }
           @media screen and (min-width: 768px) {
             .main-header__nav__row__search input {
               border-style: solid !important; } }

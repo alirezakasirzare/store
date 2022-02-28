@@ -122,7 +122,9 @@
           // @extend .border-0;
           border-style: none !important;
           box-shadow: none !important;
+          /*rtl:begin:ignore*/
           padding-left: 100px !important;
+          /*rtl:end:ignore*/
           @include media("md") {
             // @extend .form-control;
             border-style: solid !important;
@@ -140,13 +142,13 @@
 
         &__submit {
           @extend .position-absolute;
-          @extend .start-0;
+          @extend .end-0;
           @extend .top-50;
           @extend .px-3;
           @extend .py-1;
           @extend .translate-middle-y;
           @extend .btn;
-          @extend .ms-1;
+          @extend .me-1;
           @extend .btn-outline-primary-custom;
         }
       }
