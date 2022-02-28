@@ -5246,7 +5246,7 @@ textarea.form-control-lg {
 .bottom-100 {
   bottom: 100% !important; }
 
-.start-0, .main-header__nav, .main-header__nav__row__search input, .main-header__nav__row__search__submit, .main-section .sliders-container .big-slider-container__controls, .main-section .sliders-container .big-slider-container__controls__item--prev, .main-section .sliders-container .big-slider-container__zoom {
+.start-0, .main-header__nav, .main-header__nav__row__search input, .main-header__nav__row__search__submit, .main-section .sliders-container .big-slider-container__controls, .main-section .sliders-container .big-slider-container__controls__item--next, .main-section .sliders-container .big-slider-container__zoom {
   left: 0 !important; }
 
 .start-50, .mobile-menu__image {
@@ -5255,7 +5255,7 @@ textarea.form-control-lg {
 .start-100 {
   left: 100% !important; }
 
-.end-0, .main-section .sliders-container .big-slider-container__controls__item--next {
+.end-0, .main-section .sliders-container .big-slider-container__controls__item--prev {
   right: 0 !important; }
 
 .end-50 {
@@ -8075,7 +8075,7 @@ li {
       z-index: 10;
       background-color: #dee2e6;
       bottom: 20px;
-      right: 20px;
+      left: 20px;
       width: 40px;
       height: 40px; }
       .main-section .sliders-container .big-slider-container__zoom-btn:hover {

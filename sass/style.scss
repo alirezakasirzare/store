@@ -331,10 +331,10 @@
         }
 
         &__item--prev {
-          @extend .start-0;
+          @extend .end-0;
         }
         &__item--next {
-          @extend .end-0;
+          @extend .start-0;
         }
 
         &__item--disabled {
@@ -373,7 +373,7 @@
         z-index: 10;
         background-color: $gray-300;
         bottom: 20px;
-        right: 20px;
+        left: 20px;
         width: 40px;
         height: 40px;
 
