@@ -253,7 +253,7 @@
       // border-color: #c7929c !important;
       .mobile-menu__list__link {
         // background-color: #dda9b4;
-        @extend .border-end;
+        @extend .border-start;
         @extend .border-5;
         @extend .pe-2;
         // @extend .border-info;

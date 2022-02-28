@@ -5270,7 +5270,7 @@ textarea.form-control-lg {
 .border-top-0 {
   border-top: 0 !important; }
 
-.border-end, .mobile-menu__list .mobile-collapse .mobile-menu__list__link {
+.border-end {
   border-left: 1px solid #dee2e6 !important; }
 
 .border-end-0 {
@@ -5282,7 +5282,7 @@ textarea.form-control-lg {
 .border-bottom-0 {
   border-bottom: 0 !important; }
 
-.border-start {
+.border-start, .mobile-menu__list .mobile-collapse .mobile-menu__list__link {
   border-right: 1px solid #dee2e6 !important; }
 
 .border-start-0 {
