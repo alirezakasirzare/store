@@ -421,6 +421,7 @@
 .breadcrumb-container {
   @extend .d-flex;
   @extend .gap-3;
+  @extend .d-none;
 
   &__link {
     @extend .link-secondary;
@@ -436,69 +437,81 @@
   font-size: 14px;
 }
 
-.content-product {
-  @extend .d-flex;
-  @extend .flex-column;
+.main-content-container {
+  @extend .col-12;
+  @extend .col-lg-6;
+  @extend .col-xl-7;
+  @extend .mt-2;
+  @extend .mt-lg-5;
 
-  &__title {
-    @extend .mt-3;
+  .content-product {
+    @extend .d-flex;
+    @extend .flex-column;
 
-    h1 {
-      @extend .fs-3;
+    &__title {
+      @extend .mt-3;
+      @extend .d-none;
+
+      h1 {
+        @extend .fs-3;
+        @extend .fw-bold;
+        color: $gray-700;
+      }
+    }
+
+    &__price {
+      @extend .mt-3;
+      @extend .text-center;
+      @extend .text-lg-start;
+      color: $color-primary;
+
+      span {
+        @extend .fs-2;
+        @extend .fw-bold;
+      }
+    }
+
+    &__inputs-container {
+      @extend .mt-3;
+      @extend .mt-lg-5;
+      // @extend .fs-3;
+
+      &__input-container {
+        @extend .d-flex;
+        @extend .flex-column;
+        @extend .gap-2;
+        @extend .align-items-start;
+
+        &__input {
+          @extend .form-select;
+          @extend .form-select-lg;
+        }
+      }
+    }
+
+    &__buttons {
+      @extend .mt-4;
+      @extend .d-flex;
+      @extend .justify-content-between;
+      @extend .align-items-center;
+
+      &__media {
+        @extend .d-flex;
+        @extend .gap-2;
+        &__item {
+          @extend .link-secondary;
+          @extend .fs-4;
+          text-decoration: none !important;
+        }
+      }
+    }
+
+    &__info {
+      @extend .text-center;
       @extend .fw-bold;
+      @extend .mt-5;
+      text-decoration: underline;
       color: $gray-700;
     }
-  }
-
-  &__price {
-    @extend .mt-3;
-    color: $color-primary;
-
-    span {
-      @extend .fs-2;
-      @extend .fw-bold;
-    }
-  }
-
-  &__inputs-container {
-    @extend .mt-5;
-    // @extend .fs-3;
-
-    &__input-container {
-      @extend .d-flex;
-      @extend .flex-column;
-      @extend .gap-2;
-      @extend .align-items-start;
-
-      &__input {
-        @extend .form-select;
-        @extend .form-select-lg;
-      }
-    }
-  }
-
-  &__buttons {
-    @extend .mt-4;
-    @extend .d-flex;
-    @extend .justify-content-between;
-    @extend .align-items-center;
-
-    &__media {
-      @extend .d-flex;
-      @extend .gap-2;
-      &__item {
-        @extend .link-secondary;
-        @extend .fs-4;
-        text-decoration: none !important;
-      }
-    }
-  }
-
-  &__info {
-    @extend .text-center;
-    @extend .fw-bold;
-    @extend .mt-5;
-    text-decoration: underline;
-    color: $gray-700;
   }
 }

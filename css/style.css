@@ -628,7 +628,7 @@ progress {
   flex: 0 0 auto;
   width: 91.66667%; }
 
-.col-12, .main-section .sliders-container {
+.col-12, .main-section .sliders-container, .main-content-container {
   flex: 0 0 auto;
   width: 100%; }
 
@@ -1003,7 +1003,7 @@ progress {
   .col-lg-5 {
     flex: 0 0 auto;
     width: 41.66667%; }
-  .col-lg-6, .main-section .sliders-container {
+  .col-lg-6, .main-section .sliders-container, .main-content-container {
     flex: 0 0 auto;
     width: 50%; }
   .col-lg-7 {
@@ -1130,7 +1130,7 @@ progress {
   .col-xl-6 {
     flex: 0 0 auto;
     width: 50%; }
-  .col-xl-7 {
+  .col-xl-7, .main-content-container {
     flex: 0 0 auto;
     width: 58.33333%; }
   .col-xl-8 {
@@ -1666,7 +1666,7 @@ textarea.form-control-lg {
     height: 1.5em;
     border-radius: 0.25rem; }
 
-.form-select, .content-product__inputs-container__input-container__input {
+.form-select, .main-content-container .content-product__inputs-container__input-container__input {
   display: block;
   width: 100%;
   padding: 0.375rem 2.25rem 0.375rem 0.75rem;
@@ -1685,18 +1685,18 @@ textarea.form-control-lg {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   appearance: none; }
   @media (prefers-reduced-motion: reduce) {
-    .form-select, .content-product__inputs-container__input-container__input {
+    .form-select, .main-content-container .content-product__inputs-container__input-container__input {
       transition: none; } }
-  .form-select:focus, .content-product__inputs-container__input-container__input:focus {
+  .form-select:focus, .main-content-container .content-product__inputs-container__input-container__input:focus {
     border-color: #86b7fe;
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); }
-  .form-select[multiple], .content-product__inputs-container__input-container__input[multiple], .form-select[size]:not([size="1"]), .content-product__inputs-container__input-container__input[size]:not([size="1"]) {
+  .form-select[multiple], .main-content-container .content-product__inputs-container__input-container__input[multiple], .form-select[size]:not([size="1"]), .main-content-container .content-product__inputs-container__input-container__input[size]:not([size="1"]) {
     padding-right: 0.75rem;
     background-image: none; }
-  .form-select:disabled, .content-product__inputs-container__input-container__input:disabled {
+  .form-select:disabled, .main-content-container .content-product__inputs-container__input-container__input:disabled {
     background-color: #e9ecef; }
-  .form-select:-moz-focusring, .content-product__inputs-container__input-container__input:-moz-focusring {
+  .form-select:-moz-focusring, .main-content-container .content-product__inputs-container__input-container__input:-moz-focusring {
     color: transparent;
     text-shadow: 0 0 0 #212529; }
 
@@ -1707,7 +1707,7 @@ textarea.form-control-lg {
   font-size: 0.875rem;
   border-radius: 0.2rem; }
 
-.form-select-lg, .content-product__inputs-container__input-container__input {
+.form-select-lg, .main-content-container .content-product__inputs-container__input-container__input {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
@@ -1862,7 +1862,7 @@ textarea.form-control-lg {
   position: relative; }
   .form-floating > .form-control, .main-header__nav__row__search .form-floating > input,
   .form-floating > .form-select,
-  .form-floating > .content-product__inputs-container__input-container__input {
+  .main-content-container .form-floating > .content-product__inputs-container__input-container__input {
     height: calc(3.5rem + 2px);
     line-height: 1.25; }
   .form-floating > label {
@@ -1890,14 +1890,14 @@ textarea.form-control-lg {
       padding-bottom: 0.625rem; }
   
   .form-floating > .form-select,
-  .form-floating > .content-product__inputs-container__input-container__input {
+  .main-content-container .form-floating > .content-product__inputs-container__input-container__input {
     padding-top: 1.625rem;
     padding-bottom: 0.625rem; }
   .form-floating > .form-control:focus ~ label, .main-header__nav__row__search .form-floating > input:focus ~ label,
   .form-floating > .form-control:not(:placeholder-shown) ~ label,
   .main-header__nav__row__search .form-floating > input:not(:placeholder-shown) ~ label,
   .form-floating > .form-select ~ label,
-  .form-floating > .content-product__inputs-container__input-container__input ~ label {
+  .main-content-container .form-floating > .content-product__inputs-container__input-container__input ~ label {
     opacity: 0.65;
     transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem); }
   .form-floating > .form-control:-webkit-autofill ~ label, .main-header__nav__row__search .form-floating > input:-webkit-autofill ~ label {
@@ -1912,14 +1912,14 @@ textarea.form-control-lg {
   width: 100%; }
   .input-group > .form-control, .main-header__nav__row__search .input-group > input,
   .input-group > .form-select,
-  .input-group > .content-product__inputs-container__input-container__input {
+  .main-content-container .input-group > .content-product__inputs-container__input-container__input {
     position: relative;
     flex: 1 1 auto;
     width: 1%;
     min-width: 0; }
   .input-group > .form-control:focus, .main-header__nav__row__search .input-group > input:focus,
   .input-group > .form-select:focus,
-  .input-group > .content-product__inputs-container__input-container__input:focus {
+  .main-content-container .input-group > .content-product__inputs-container__input-container__input:focus {
     z-index: 3; }
   .input-group .btn, .input-group .main-header__nav__row__search__submit, .input-group .main-section .sliders-container .big-slider-container__zoom-btn, .main-section .sliders-container .input-group .big-slider-container__zoom-btn {
     position: relative;
@@ -1943,7 +1943,7 @@ textarea.form-control-lg {
 
 .input-group-lg > .form-control, .main-header__nav__row__search .input-group-lg > input,
 .input-group-lg > .form-select,
-.input-group-lg > .content-product__inputs-container__input-container__input,
+.main-content-container .input-group-lg > .content-product__inputs-container__input-container__input,
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn,
 .input-group-lg > .main-header__nav__row__search__submit,
@@ -1954,7 +1954,7 @@ textarea.form-control-lg {
 
 .input-group-sm > .form-control, .main-header__nav__row__search .input-group-sm > input,
 .input-group-sm > .form-select,
-.input-group-sm > .content-product__inputs-container__input-container__input,
+.main-content-container .input-group-sm > .content-product__inputs-container__input-container__input,
 .input-group-sm > .input-group-text,
 .input-group-sm > .btn,
 .input-group-sm > .main-header__nav__row__search__submit,
@@ -1965,9 +1965,9 @@ textarea.form-control-lg {
 
 
 .input-group-lg > .form-select,
-.input-group-lg > .content-product__inputs-container__input-container__input,
+.main-content-container .input-group-lg > .content-product__inputs-container__input-container__input,
 .input-group-sm > .form-select,
-.input-group-sm > .content-product__inputs-container__input-container__input {
+.main-content-container .input-group-sm > .content-product__inputs-container__input-container__input {
   padding-right: 3rem; }
 
 .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu),
@@ -2026,14 +2026,14 @@ textarea.form-control-lg {
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem); }
 
-.was-validated .form-select:valid, .was-validated .content-product__inputs-container__input-container__input:valid, .form-select.is-valid, .is-valid.content-product__inputs-container__input-container__input {
+.was-validated .form-select:valid, .was-validated .main-content-container .content-product__inputs-container__input-container__input:valid, .main-content-container .was-validated .content-product__inputs-container__input-container__input:valid, .form-select.is-valid, .main-content-container .is-valid.content-product__inputs-container__input-container__input {
   border-color: #198754; }
-  .was-validated .form-select:valid:not([multiple]):not([size]), .was-validated .content-product__inputs-container__input-container__input:valid:not([multiple]):not([size]), .was-validated .form-select:valid:not([multiple])[size="1"], .was-validated .content-product__inputs-container__input-container__input:valid:not([multiple])[size="1"], .form-select.is-valid:not([multiple]):not([size]), .is-valid.content-product__inputs-container__input-container__input:not([multiple]):not([size]), .form-select.is-valid:not([multiple])[size="1"], .is-valid.content-product__inputs-container__input-container__input:not([multiple])[size="1"] {
+  .was-validated .form-select:valid:not([multiple]):not([size]), .was-validated .main-content-container .content-product__inputs-container__input-container__input:valid:not([multiple]):not([size]), .main-content-container .was-validated .content-product__inputs-container__input-container__input:valid:not([multiple]):not([size]), .was-validated .form-select:valid:not([multiple])[size="1"], .was-validated .main-content-container .content-product__inputs-container__input-container__input:valid:not([multiple])[size="1"], .main-content-container .was-validated .content-product__inputs-container__input-container__input:valid:not([multiple])[size="1"], .form-select.is-valid:not([multiple]):not([size]), .main-content-container .is-valid.content-product__inputs-container__input-container__input:not([multiple]):not([size]), .form-select.is-valid:not([multiple])[size="1"], .main-content-container .is-valid.content-product__inputs-container__input-container__input:not([multiple])[size="1"] {
     padding-right: 4.125rem;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
     background-position: right 0.75rem center, center right 2.25rem;
     background-size: 16px 12px, calc(0.75em + 0.375rem) calc(0.75em + 0.375rem); }
-  .was-validated .form-select:valid:focus, .was-validated .content-product__inputs-container__input-container__input:valid:focus, .form-select.is-valid:focus, .is-valid.content-product__inputs-container__input-container__input:focus {
+  .was-validated .form-select:valid:focus, .was-validated .main-content-container .content-product__inputs-container__input-container__input:valid:focus, .main-content-container .was-validated .content-product__inputs-container__input-container__input:valid:focus, .form-select.is-valid:focus, .main-content-container .is-valid.content-product__inputs-container__input-container__input:focus {
     border-color: #198754;
     box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25); }
 
@@ -2049,13 +2049,15 @@ textarea.form-control-lg {
 .form-check-inline .form-check-input ~ .valid-feedback {
   margin-left: .5em; }
 
-.was-validated .input-group .form-control:valid, .was-validated .input-group .main-header__nav__row__search input:valid, .main-header__nav__row__search .was-validated .input-group input:valid, .input-group .form-control.is-valid, .input-group .main-header__nav__row__search input.is-valid, .main-header__nav__row__search .input-group input.is-valid, .was-validated .input-group .form-select:valid, .was-validated .input-group .content-product__inputs-container__input-container__input:valid,
+.was-validated .input-group .form-control:valid, .was-validated .input-group .main-header__nav__row__search input:valid, .main-header__nav__row__search .was-validated .input-group input:valid, .input-group .form-control.is-valid, .input-group .main-header__nav__row__search input.is-valid, .main-header__nav__row__search .input-group input.is-valid, .was-validated .input-group .form-select:valid, .was-validated .input-group .main-content-container .content-product__inputs-container__input-container__input:valid, .main-content-container .was-validated .input-group .content-product__inputs-container__input-container__input:valid,
 .input-group .form-select.is-valid,
-.input-group .is-valid.content-product__inputs-container__input-container__input {
+.input-group .main-content-container .is-valid.content-product__inputs-container__input-container__input,
+.main-content-container .input-group .is-valid.content-product__inputs-container__input-container__input {
   z-index: 1; }
-  .was-validated .input-group .form-control:valid:focus, .was-validated .input-group .main-header__nav__row__search input:valid:focus, .main-header__nav__row__search .was-validated .input-group input:valid:focus, .input-group .form-control.is-valid:focus, .input-group .main-header__nav__row__search input.is-valid:focus, .main-header__nav__row__search .input-group input.is-valid:focus, .was-validated .input-group .form-select:valid:focus, .was-validated .input-group .content-product__inputs-container__input-container__input:valid:focus,
+  .was-validated .input-group .form-control:valid:focus, .was-validated .input-group .main-header__nav__row__search input:valid:focus, .main-header__nav__row__search .was-validated .input-group input:valid:focus, .input-group .form-control.is-valid:focus, .input-group .main-header__nav__row__search input.is-valid:focus, .main-header__nav__row__search .input-group input.is-valid:focus, .was-validated .input-group .form-select:valid:focus, .was-validated .input-group .main-content-container .content-product__inputs-container__input-container__input:valid:focus, .main-content-container .was-validated .input-group .content-product__inputs-container__input-container__input:valid:focus,
   .input-group .form-select.is-valid:focus,
-  .input-group .is-valid.content-product__inputs-container__input-container__input:focus {
+  .input-group .main-content-container .is-valid.content-product__inputs-container__input-container__input:focus,
+  .main-content-container .input-group .is-valid.content-product__inputs-container__input-container__input:focus {
     z-index: 3; }
 
 .invalid-feedback {
@@ -2099,14 +2101,14 @@ textarea.form-control-lg {
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem); }
 
-.was-validated .form-select:invalid, .was-validated .content-product__inputs-container__input-container__input:invalid, .form-select.is-invalid, .is-invalid.content-product__inputs-container__input-container__input {
+.was-validated .form-select:invalid, .was-validated .main-content-container .content-product__inputs-container__input-container__input:invalid, .main-content-container .was-validated .content-product__inputs-container__input-container__input:invalid, .form-select.is-invalid, .main-content-container .is-invalid.content-product__inputs-container__input-container__input {
   border-color: #dc3545; }
-  .was-validated .form-select:invalid:not([multiple]):not([size]), .was-validated .content-product__inputs-container__input-container__input:invalid:not([multiple]):not([size]), .was-validated .form-select:invalid:not([multiple])[size="1"], .was-validated .content-product__inputs-container__input-container__input:invalid:not([multiple])[size="1"], .form-select.is-invalid:not([multiple]):not([size]), .is-invalid.content-product__inputs-container__input-container__input:not([multiple]):not([size]), .form-select.is-invalid:not([multiple])[size="1"], .is-invalid.content-product__inputs-container__input-container__input:not([multiple])[size="1"] {
+  .was-validated .form-select:invalid:not([multiple]):not([size]), .was-validated .main-content-container .content-product__inputs-container__input-container__input:invalid:not([multiple]):not([size]), .main-content-container .was-validated .content-product__inputs-container__input-container__input:invalid:not([multiple]):not([size]), .was-validated .form-select:invalid:not([multiple])[size="1"], .was-validated .main-content-container .content-product__inputs-container__input-container__input:invalid:not([multiple])[size="1"], .main-content-container .was-validated .content-product__inputs-container__input-container__input:invalid:not([multiple])[size="1"], .form-select.is-invalid:not([multiple]):not([size]), .main-content-container .is-invalid.content-product__inputs-container__input-container__input:not([multiple]):not([size]), .form-select.is-invalid:not([multiple])[size="1"], .main-content-container .is-invalid.content-product__inputs-container__input-container__input:not([multiple])[size="1"] {
     padding-right: 4.125rem;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
     background-position: right 0.75rem center, center right 2.25rem;
     background-size: 16px 12px, calc(0.75em + 0.375rem) calc(0.75em + 0.375rem); }
-  .was-validated .form-select:invalid:focus, .was-validated .content-product__inputs-container__input-container__input:invalid:focus, .form-select.is-invalid:focus, .is-invalid.content-product__inputs-container__input-container__input:focus {
+  .was-validated .form-select:invalid:focus, .was-validated .main-content-container .content-product__inputs-container__input-container__input:invalid:focus, .main-content-container .was-validated .content-product__inputs-container__input-container__input:invalid:focus, .form-select.is-invalid:focus, .main-content-container .is-invalid.content-product__inputs-container__input-container__input:focus {
     border-color: #dc3545;
     box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25); }
 
@@ -2122,13 +2124,15 @@ textarea.form-control-lg {
 .form-check-inline .form-check-input ~ .invalid-feedback {
   margin-left: .5em; }
 
-.was-validated .input-group .form-control:invalid, .was-validated .input-group .main-header__nav__row__search input:invalid, .main-header__nav__row__search .was-validated .input-group input:invalid, .input-group .form-control.is-invalid, .input-group .main-header__nav__row__search input.is-invalid, .main-header__nav__row__search .input-group input.is-invalid, .was-validated .input-group .form-select:invalid, .was-validated .input-group .content-product__inputs-container__input-container__input:invalid,
+.was-validated .input-group .form-control:invalid, .was-validated .input-group .main-header__nav__row__search input:invalid, .main-header__nav__row__search .was-validated .input-group input:invalid, .input-group .form-control.is-invalid, .input-group .main-header__nav__row__search input.is-invalid, .main-header__nav__row__search .input-group input.is-invalid, .was-validated .input-group .form-select:invalid, .was-validated .input-group .main-content-container .content-product__inputs-container__input-container__input:invalid, .main-content-container .was-validated .input-group .content-product__inputs-container__input-container__input:invalid,
 .input-group .form-select.is-invalid,
-.input-group .is-invalid.content-product__inputs-container__input-container__input {
+.input-group .main-content-container .is-invalid.content-product__inputs-container__input-container__input,
+.main-content-container .input-group .is-invalid.content-product__inputs-container__input-container__input {
   z-index: 2; }
-  .was-validated .input-group .form-control:invalid:focus, .was-validated .input-group .main-header__nav__row__search input:invalid:focus, .main-header__nav__row__search .was-validated .input-group input:invalid:focus, .input-group .form-control.is-invalid:focus, .input-group .main-header__nav__row__search input.is-invalid:focus, .main-header__nav__row__search .input-group input.is-invalid:focus, .was-validated .input-group .form-select:invalid:focus, .was-validated .input-group .content-product__inputs-container__input-container__input:invalid:focus,
+  .was-validated .input-group .form-control:invalid:focus, .was-validated .input-group .main-header__nav__row__search input:invalid:focus, .main-header__nav__row__search .was-validated .input-group input:invalid:focus, .input-group .form-control.is-invalid:focus, .input-group .main-header__nav__row__search input.is-invalid:focus, .main-header__nav__row__search .input-group input.is-invalid:focus, .was-validated .input-group .form-select:invalid:focus, .was-validated .input-group .main-content-container .content-product__inputs-container__input-container__input:invalid:focus, .main-content-container .was-validated .input-group .content-product__inputs-container__input-container__input:invalid:focus,
   .input-group .form-select.is-invalid:focus,
-  .input-group .is-invalid.content-product__inputs-container__input-container__input:focus {
+  .input-group .main-content-container .is-invalid.content-product__inputs-container__input-container__input:focus,
+  .main-content-container .input-group .is-invalid.content-product__inputs-container__input-container__input:focus {
     z-index: 3; }
 
 .btn, .main-header__nav__row__search__submit, .main-section .sliders-container .big-slider-container__zoom-btn {
@@ -4972,9 +4976,9 @@ textarea.form-control-lg {
   .link-primary:hover, .link-primary:focus {
     color: #0a58ca; }
 
-.link-secondary, .breadcrumb-container__link, .content-product__buttons__media__item {
+.link-secondary, .breadcrumb-container__link, .main-content-container .content-product__buttons__media__item {
   color: #6c757d; }
-  .link-secondary:hover, .breadcrumb-container__link:hover, .content-product__buttons__media__item:hover, .link-secondary:focus, .breadcrumb-container__link:focus, .content-product__buttons__media__item:focus {
+  .link-secondary:hover, .breadcrumb-container__link:hover, .main-content-container .content-product__buttons__media__item:hover, .link-secondary:focus, .breadcrumb-container__link:focus, .main-content-container .content-product__buttons__media__item:focus {
     color: #565e64; }
 
 .link-success {
@@ -5203,13 +5207,13 @@ textarea.form-control-lg {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, .main-header__nav__row, .main-header__nav__row__right, .main-header__nav__row__right__link, .main-header__nav__row__left, .main-header__nav__row__left__link, .main-header__nav .open-search .main-header__nav__row__search, .mobile-menu__list, .mobile-menu__list__link--icon, .mobile-menu__list__link--icon__item, .main-section .sliders-container, .main-section .sliders-container .big-slider-container__controls__item, .main-section .sliders-container .big-slider-container__zoom-btn, .breadcrumb-container, .content-product, .content-product__inputs-container__input-container, .content-product__buttons, .content-product__buttons__media {
+.d-flex, .main-header__nav__row, .main-header__nav__row__right, .main-header__nav__row__right__link, .main-header__nav__row__left, .main-header__nav__row__left__link, .main-header__nav .open-search .main-header__nav__row__search, .mobile-menu__list, .mobile-menu__list__link--icon, .mobile-menu__list__link--icon__item, .main-section .sliders-container, .main-section .sliders-container .big-slider-container__controls__item, .main-section .sliders-container .big-slider-container__zoom-btn, .breadcrumb-container, .main-content-container .content-product, .main-content-container .content-product__inputs-container__input-container, .main-content-container .content-product__buttons, .main-content-container .content-product__buttons__media {
   display: flex !important; }
 
 .d-inline-flex {
   display: inline-flex !important; }
 
-.d-none, .main-header__nav__row__search, .main-header__nav .open-search .main-header__nav__row__right, .main-header__nav .open-search .main-header__nav__row__left {
+.d-none, .main-header__nav__row__search, .main-header__nav .open-search .main-header__nav__row__right, .main-header__nav .open-search .main-header__nav__row__left, .breadcrumb-container, .main-content-container .content-product__title {
   display: none !important; }
 
 .shadow {
@@ -5410,7 +5414,7 @@ textarea.form-control-lg {
 .flex-row, .mobile-menu .mobile-menu__list.mobile-menu__list--login {
   flex-direction: row !important; }
 
-.flex-column, .mobile-menu__list, .main-section .sliders-container, .content-product, .content-product__inputs-container__input-container {
+.flex-column, .mobile-menu__list, .main-section .sliders-container, .main-content-container .content-product, .main-content-container .content-product__inputs-container__input-container {
   flex-direction: column !important; }
 
 .flex-row-reverse {
@@ -5446,7 +5450,7 @@ textarea.form-control-lg {
 .gap-1, .mobile-menu__list {
   gap: 0.25rem !important; }
 
-.gap-2, .main-header__nav__row__right__link, .content-product__inputs-container__input-container, .content-product__buttons__media {
+.gap-2, .main-header__nav__row__right__link, .main-content-container .content-product__inputs-container__input-container, .main-content-container .content-product__buttons__media {
   gap: 0.5rem !important; }
 
 .gap-3, .breadcrumb-container {
@@ -5467,7 +5471,7 @@ textarea.form-control-lg {
 .justify-content-center, .mobile-menu__list__link--icon__item, .main-section .sliders-container .big-slider-container__controls__item, .main-section .sliders-container .big-slider-container__zoom-btn {
   justify-content: center !important; }
 
-.justify-content-between, .main-header__nav__row, .mobile-menu__list__link--icon, .content-product__buttons {
+.justify-content-between, .main-header__nav__row, .mobile-menu__list__link--icon, .main-content-container .content-product__buttons {
   justify-content: space-between !important; }
 
 .justify-content-around {
@@ -5476,13 +5480,13 @@ textarea.form-control-lg {
 .justify-content-evenly {
   justify-content: space-evenly !important; }
 
-.align-items-start, .content-product__inputs-container__input-container {
+.align-items-start, .main-content-container .content-product__inputs-container__input-container {
   align-items: flex-start !important; }
 
 .align-items-end {
   align-items: flex-end !important; }
 
-.align-items-center, .main-header__nav__row__right, .main-header__nav__row__right__link, .main-header__nav__row__left, .main-header__nav__row__left__link, .main-header__nav__row__search, .mobile-menu__list__link--icon__item, .main-section .sliders-container .big-slider-container__controls__item, .main-section .sliders-container .big-slider-container__zoom-btn, .content-product__buttons {
+.align-items-center, .main-header__nav__row__right, .main-header__nav__row__right__link, .main-header__nav__row__left, .main-header__nav__row__left__link, .main-header__nav__row__search, .mobile-menu__list__link--icon__item, .main-section .sliders-container .big-slider-container__controls__item, .main-section .sliders-container .big-slider-container__zoom-btn, .main-content-container .content-product__buttons {
   align-items: center !important; }
 
 .align-items-baseline {
@@ -5634,16 +5638,16 @@ textarea.form-control-lg {
 .mt-1 {
   margin-top: 0.25rem !important; }
 
-.mt-2 {
+.mt-2, .main-content-container {
   margin-top: 0.5rem !important; }
 
-.mt-3, .content-product__title, .content-product__price {
+.mt-3, .main-content-container .content-product__title, .main-content-container .content-product__price, .main-content-container .content-product__inputs-container {
   margin-top: 1rem !important; }
 
-.mt-4, .content-product__buttons {
+.mt-4, .main-content-container .content-product__buttons {
   margin-top: 1.5rem !important; }
 
-.mt-5, .content-product__inputs-container, .content-product__info {
+.mt-5, .main-content-container .content-product__info {
   margin-top: 3rem !important; }
 
 .mt-auto {
@@ -5856,13 +5860,13 @@ textarea.form-control-lg {
 .fs-1 {
   font-size: calc(1.375rem + 1.5vw) !important; }
 
-.fs-2, .content-product__price span {
+.fs-2, .main-content-container .content-product__price span {
   font-size: calc(1.325rem + 0.9vw) !important; }
 
-.fs-3, .content-product__title h1, .content-product__title .h1 {
+.fs-3, .main-content-container .content-product__title h1, .main-content-container .content-product__title .h1 {
   font-size: calc(1.3rem + 0.6vw) !important; }
 
-.fs-4, .mobile-menu__list__link--icon__item, .content-product__buttons__media__item {
+.fs-4, .mobile-menu__list__link--icon__item, .main-content-container .content-product__buttons__media__item {
   font-size: calc(1.275rem + 0.3vw) !important; }
 
 .fs-5 {
@@ -5886,7 +5890,7 @@ textarea.form-control-lg {
 .fw-normal {
   font-weight: 400 !important; }
 
-.fw-bold, .content-product__title h1, .content-product__title .h1, .content-product__price span, .content-product__info {
+.fw-bold, .main-content-container .content-product__title h1, .main-content-container .content-product__title .h1, .main-content-container .content-product__price span, .main-content-container .content-product__info {
   font-weight: 700 !important; }
 
 .fw-bolder {
@@ -5910,7 +5914,7 @@ textarea.form-control-lg {
 .text-end {
   text-align: right !important; }
 
-.text-center, .mobile-menu .mobile-menu__list.mobile-menu__list--login .mobile-menu__list__item .mobile-menu__list__link, .content-product__info {
+.text-center, .mobile-menu .mobile-menu__list.mobile-menu__list--login .mobile-menu__list__item .mobile-menu__list__link, .main-content-container .content-product__price, .main-content-container .content-product__info {
   text-align: center !important; }
 
 .text-decoration-none, .main-header__nav__row__right__link, .main-header__nav__row__left__link {
@@ -7010,7 +7014,7 @@ textarea.form-control-lg {
     margin-top: 1rem !important; }
   .mt-lg-4 {
     margin-top: 1.5rem !important; }
-  .mt-lg-5 {
+  .mt-lg-5, .main-content-container, .main-content-container .content-product__inputs-container {
     margin-top: 3rem !important; }
   .mt-lg-auto {
     margin-top: auto !important; }
@@ -7152,7 +7156,7 @@ textarea.form-control-lg {
     padding-left: 1.5rem !important; }
   .ps-lg-5 {
     padding-left: 3rem !important; }
-  .text-lg-start {
+  .text-lg-start, .main-content-container .content-product__price {
     text-align: left !important; }
   .text-lg-end {
     text-align: right !important; }
@@ -7842,11 +7846,11 @@ textarea.form-control-lg {
 @media (min-width: 1200px) {
   .fs-1 {
     font-size: 2.5rem !important; }
-  .fs-2, .content-product__price span {
+  .fs-2, .main-content-container .content-product__price span {
     font-size: 2rem !important; }
-  .fs-3, .content-product__title h1, .content-product__title .h1 {
+  .fs-3, .main-content-container .content-product__title h1, .main-content-container .content-product__title .h1 {
     font-size: 1.75rem !important; }
-  .fs-4, .mobile-menu__list__link--icon__item, .content-product__buttons__media__item {
+  .fs-4, .mobile-menu__list__link--icon__item, .main-content-container .content-product__buttons__media__item {
     font-size: 1.5rem !important; } }
 
 @media print {
@@ -8133,15 +8137,15 @@ li {
   color: #fff;
   font-size: 14px; }
 
-.content-product__title h1, .content-product__title .h1 {
+.main-content-container .content-product__title h1, .main-content-container .content-product__title .h1 {
   color: #495057; }
 
-.content-product__price {
+.main-content-container .content-product__price {
   color: #c4848f; }
 
-.content-product__buttons__media__item {
+.main-content-container .content-product__buttons__media__item {
   text-decoration: none !important; }
 
-.content-product__info {
+.main-content-container .content-product__info {
   text-decoration: underline;
   color: #495057; }
