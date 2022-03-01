@@ -636,9 +636,26 @@
     box-shadow: 0 2px 10px rgba(31, 45, 61, 0.16);
   }
 
-  &__link__img {
-    @extend .user-select-none;
-    width: 100%;
+  .more-product-card:hover .more-product__link__img--hover {
+    @extend .d-block;
+  }
+
+  .more-product-card:hover .more-product__link__img {
+    @extend .d-none;
+  }
+
+  &__link {
+    @extend .h-auto;
+    @extend .d-block;
+    &__img,
+    &__img--hover {
+      @extend .user-select-none;
+      @extend .w-100;
+      @include fadeAnimation;
+    }
+    &__img--hover {
+      @extend .d-none;
+    }
   }
 
   article {
