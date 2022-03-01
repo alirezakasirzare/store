@@ -5481,7 +5481,7 @@ textarea.form-control-lg {
 .gap-4 {
   gap: 1.5rem !important; }
 
-.gap-5 {
+.gap-5, .more-product {
   gap: 3rem !important; }
 
 .justify-content-start {
@@ -8201,3 +8201,5 @@ li {
   .more-product__header::before {
     top: -15px !important;
     bottom: auto !important; }
+  .more-product__link__img {
+    width: 100%; }

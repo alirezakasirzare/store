@@ -100,13 +100,13 @@ const smallSlider = tns({
 // more product carousel
 const moreProductSlider = tns({
   container: "#more-product-slider",
-  items: 3,
+  items: 4,
   slideBy: "page",
   mouseDrag: true,
   nav: false,
   controls: false,
-  edgePadding: 10,
-  loop: false,
+  // edgePadding: 10,
+  loop: true,
   // responsive: {
   //   576: {
   //     items: 4,
