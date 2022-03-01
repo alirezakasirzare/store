@@ -5214,7 +5214,7 @@ textarea.form-control-lg {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, .main-header__nav__row, .main-header__nav__row__right, .main-header__nav__row__right__link, .main-header__nav__row__left, .main-header__nav__row__left__link, .main-header__nav .open-search .main-header__nav__row__search, .mobile-menu__list, .mobile-menu__list__link--icon, .mobile-menu__list__link--icon__item, .main-section .sliders-container, .main-section .sliders-container .big-slider-container__controls__item, .main-section .sliders-container .big-slider-container__zoom-btn, .breadcrumb-container-mobile, .main-content-container .content-product, .main-content-container .content-product__inputs-container__input-container, .main-content-container .content-product__buttons, .main-content-container .content-product__buttons__media {
+.d-flex, .main-header__nav__row, .main-header__nav__row__right, .main-header__nav__row__right__link, .main-header__nav__row__left, .main-header__nav__row__left__link, .main-header__nav .open-search .main-header__nav__row__search, .mobile-menu__list, .mobile-menu__list__link--icon, .mobile-menu__list__link--icon__item, .main-section .sliders-container, .main-section .sliders-container .big-slider-container__controls__item, .main-section .sliders-container .big-slider-container__zoom-btn, .breadcrumb-container-mobile, .main-content-container .content-product, .main-content-container .content-product__inputs-container__input-container, .main-content-container .content-product__buttons, .main-content-container .content-product__buttons__media, .more-product {
   display: flex !important; }
 
 .d-inline-flex {
@@ -5238,10 +5238,10 @@ textarea.form-control-lg {
 .position-static {
   position: static !important; }
 
-.position-relative, .main-header, .main-header__nav__row__search, .mobile-menu .offcanvas-body, .main-section .sliders-container .big-slider-container {
+.position-relative, .main-header, .main-header__nav__row__search, .mobile-menu .offcanvas-body, .main-section .sliders-container .big-slider-container, .more-product__header, .more-product__header::after, .more-product__header::before {
   position: relative !important; }
 
-.position-absolute, .main-header__nav, .main-header__nav__row__search input, .main-header__nav__row__search__submit, .mobile-menu__image, .main-section .sliders-container .big-slider-container__controls, .main-section .sliders-container .big-slider-container__controls__item, .main-section .sliders-container .big-slider-container__zoom, .main-section .sliders-container .big-slider-container__zoom-btn {
+.position-absolute, .main-header__nav, .main-header__nav__row__search input, .main-header__nav__row__search__submit, .mobile-menu__image, .main-section .sliders-container .big-slider-container__controls, .main-section .sliders-container .big-slider-container__controls__item, .main-section .sliders-container .big-slider-container__zoom, .main-section .sliders-container .big-slider-container__zoom-btn, .more-product__header::after, .more-product__header::before {
   position: absolute !important; }
 
 .position-fixed {
@@ -5271,7 +5271,7 @@ textarea.form-control-lg {
 .start-0, .main-header__nav, .main-header__nav__row__search input, .main-section .sliders-container .big-slider-container__controls, .main-section .sliders-container .big-slider-container__controls__item--next, .main-section .sliders-container .big-slider-container__zoom {
   right: 0 !important; }
 
-.start-50, .mobile-menu__image {
+.start-50, .mobile-menu__image, .more-product__header::after, .more-product__header::before {
   right: 50% !important; }
 
 .start-100 {
@@ -5289,7 +5289,7 @@ textarea.form-control-lg {
 .translate-middle {
   transform: translate(50%, -50%) !important; }
 
-.translate-middle-x, .mobile-menu__image {
+.translate-middle-x, .mobile-menu__image, .more-product__header::after, .more-product__header::before {
   transform: translateX(50%) !important; }
 
 .translate-middle-y, .main-header__nav, .main-header__nav__row__search input, .main-header__nav__row__search__submit, .main-section .sliders-container .big-slider-container__controls__item {
@@ -5421,7 +5421,7 @@ textarea.form-control-lg {
 .flex-row, .mobile-menu .mobile-menu__list.mobile-menu__list--login {
   flex-direction: row !important; }
 
-.flex-column, .mobile-menu__list, .main-section .sliders-container, .breadcrumb-container-mobile, .main-content-container .content-product, .main-content-container .content-product__inputs-container__input-container, .main-content-container .content-product__buttons {
+.flex-column, .mobile-menu__list, .main-section .sliders-container, .breadcrumb-container-mobile, .main-content-container .content-product, .main-content-container .content-product__inputs-container__input-container, .main-content-container .content-product__buttons, .more-product {
   flex-direction: column !important; }
 
 .flex-row-reverse {
@@ -5873,7 +5873,7 @@ textarea.form-control-lg {
 .fs-3, .main-content-container .content-product__title h1, .main-content-container .content-product__title .h1, .content-product__title--mobile h1, .content-product__title--mobile .h1 {
   font-size: calc(1.3rem + 0.6vw) !important; }
 
-.fs-4, .mobile-menu__list__link--icon__item, .main-content-container .content-product__buttons__media__item {
+.fs-4, .mobile-menu__list__link--icon__item, .main-content-container .content-product__buttons__media__item, .more-product__header {
   font-size: calc(1.275rem + 0.3vw) !important; }
 
 .fs-5 {
@@ -5921,7 +5921,7 @@ textarea.form-control-lg {
 .text-end {
   text-align: left !important; }
 
-.text-center, .mobile-menu .mobile-menu__list.mobile-menu__list--login .mobile-menu__list__item .mobile-menu__list__link, .main-content-container .content-product__price, .main-content-container .content-product__info {
+.text-center, .mobile-menu .mobile-menu__list.mobile-menu__list--login .mobile-menu__list__item .mobile-menu__list__link, .main-content-container .content-product__price, .main-content-container .content-product__info, .more-product__header {
   text-align: center !important; }
 
 .text-decoration-none, .main-header__nav__row__right__link, .main-header__nav__row__left__link {
@@ -7850,7 +7850,7 @@ textarea.form-control-lg {
     font-size: 2rem !important; }
   .fs-3, .main-content-container .content-product__title h1, .main-content-container .content-product__title .h1, .content-product__title--mobile h1, .content-product__title--mobile .h1 {
     font-size: 1.75rem !important; }
-  .fs-4, .mobile-menu__list__link--icon__item, .main-content-container .content-product__buttons__media__item {
+  .fs-4, .mobile-menu__list__link--icon__item, .main-content-container .content-product__buttons__media__item, .more-product__header {
     font-size: 1.5rem !important; } }
 
 @media print {
@@ -8163,3 +8163,16 @@ li {
 
 .content-product__title--mobile h1, .content-product__title--mobile .h1 {
   color: #495057; }
+
+.more-product {
+  margin-top: 80px;
+  margin-bottom: 800px; }
+  .more-product__header::after, .more-product__header::before {
+    content: "";
+    bottom: -15px;
+    height: 1px;
+    width: 90px;
+    background-color: #c4848f; }
+  .more-product__header::before {
+    top: -15px !important;
+    bottom: auto !important; }

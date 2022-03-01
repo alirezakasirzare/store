@@ -561,3 +561,33 @@
     color: $gray-700;
   }
 }
+
+// more product
+.more-product {
+  @extend .d-flex;
+  @extend .flex-column;
+  margin-top: 80px;
+  margin-bottom: 800px;
+  &__header {
+    @extend .text-center;
+    @extend .fs-4;
+    @extend .position-relative;
+
+    &::after,
+    &::before {
+      content: "";
+      @extend .position-absolute;
+      @extend .start-50;
+      @extend .translate-middle-x;
+      @extend .position-relative;
+      bottom: -15px;
+      height: 1px;
+      width: 90px;
+      background-color: $color-primary;
+    }
+    &::before {
+      top: -15px !important;
+      bottom: auto !important;
+    }
+  }
+}
