@@ -592,6 +592,45 @@
     }
   }
 
+  &-slider-container {
+    @extend .position-relative;
+    direction: rtl;
+
+    &__controls {
+      @extend .position-absolute;
+      @extend .start-0;
+      @extend .top-0;
+      @extend .w-100;
+      @extend .h-100;
+      background-color: #fff;
+
+      &__item {
+        @extend .position-absolute;
+        @extend .top-50;
+        @extend .translate-middle-y;
+        @extend .d-flex;
+        @extend .justify-content-center;
+        @extend .align-items-center;
+        @extend .rounded-3;
+        @extend .bg-secondary;
+        cursor: pointer;
+        z-index: 2;
+        width: 30px;
+        font-size: 35px;
+        height: 50px;
+        color: #fff;
+        transition: 0.4s ease background;
+      }
+
+      &__item--prev {
+        @extend .end-0;
+      }
+      &__item--next {
+        @extend .start-0;
+      }
+    }
+  }
+
   .more-product-card {
     // @extend .shadow-sm;
     box-shadow: 0 2px 10px rgba(31, 45, 61, 0.16);

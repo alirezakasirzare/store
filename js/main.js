@@ -101,12 +101,11 @@ const smallSlider = tns({
 const moreProductSlider = tns({
   container: "#more-product-slider",
   items: 4,
-  slideBy: "page",
   mouseDrag: true,
   nav: false,
-  controls: false,
   loop: true,
   gutter: 20,
+  controlsContainer: "#custom-control-more",
   // responsive: {
   //   576: {
   //     items: 4,
