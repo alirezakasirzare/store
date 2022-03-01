@@ -100,23 +100,23 @@ const smallSlider = tns({
 // more product carousel
 const moreProductSlider = tns({
   container: "#more-product-slider",
-  items: 4,
+  items: 1,
   mouseDrag: true,
   nav: false,
   loop: true,
   gutter: 20,
   controlsContainer: "#custom-control-more",
-  // responsive: {
-  //   576: {
-  //     items: 4,
-  //   },
-  //   768: {
-  //     items: 5,
-  //   },
-  //   992: {
-  //     items: 3,
-  //   },
-  // },
+  responsive: {
+    576: {
+      items: 2,
+    },
+    768: {
+      items: 3,
+    },
+    992: {
+      items: 4,
+    },
+  },
 });
 
 // handel the chnage item event of big slider and change the active item of small slider

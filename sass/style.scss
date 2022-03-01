@@ -567,8 +567,7 @@
   @extend .d-flex;
   @extend .flex-column;
   @extend .gap-5;
-  margin-top: 80px;
-  margin-bottom: 800px;
+  margin: 80px 0;
   &__header {
     @extend .text-center;
     @extend .fs-4;
@@ -634,19 +633,21 @@
   .more-product-card {
     // @extend .shadow-sm;
     box-shadow: 0 2px 10px rgba(31, 45, 61, 0.16);
+    @extend .border-bottom;
+    @extend .border-3;
   }
 
-  .more-product-card:hover .more-product__link__img--hover {
+  .more-product-card:hover .more-product__link__img--hover,
+  .more-product-card:active .more-product__link__img--hover {
     @extend .d-block;
   }
 
   .more-product-card:hover {
-    @extend .border-bottom;
-    @extend .border-3;
     border-color: $green-200 !important;
   }
 
-  .more-product-card:hover .more-product__link__img {
+  .more-product-card:hover .more-product__link__img,
+  .more-product-card:active .more-product__link__img {
     @extend .d-none;
   }
 
@@ -657,7 +658,7 @@
     &__img--hover {
       @extend .user-select-none;
       @extend .w-100;
-      @include fadeAnimation(0.2s);
+      @include fadeAnimation(0.4s);
     }
     &__img--hover {
       @extend .d-none;
