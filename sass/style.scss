@@ -594,6 +594,7 @@
   &-slider-container {
     @extend .position-relative;
     direction: rtl;
+    cursor: grab;
 
     &__controls {
       @extend .position-absolute;
@@ -637,11 +638,6 @@
     @extend .border-3;
   }
 
-  .more-product-card:hover .more-product__link__img--hover,
-  .more-product-card:active .more-product__link__img--hover {
-    @extend .opacity-100;
-  }
-
   .more-product-card:hover {
     border-color: $green-200 !important;
   }
@@ -661,6 +657,11 @@
       @extend .top-0;
       @extend .opacity-0;
       transition: 0.5s ease opacity;
+    }
+
+    &:hover .more-product__link__img--hover {
+      @extend .opacity-100;
+      // border: 10px solid red;
     }
   }
 

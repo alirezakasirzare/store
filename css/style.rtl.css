@@ -5178,8 +5178,7 @@ textarea.form-control-lg {
 .opacity-75, .main-section .sliders-container .small-slider__item-container {
   opacity: 0.75 !important; }
 
-.opacity-100, .main-section .sliders-container .small-slider__item-container--active, .main-section .sliders-container .small-slider__item-container:hover, .more-product .more-product-card:hover .more-product__link__img--hover,
-.more-product .more-product-card:active .more-product__link__img--hover {
+.opacity-100, .main-section .sliders-container .small-slider__item-container--active, .main-section .sliders-container .small-slider__item-container:hover, .more-product__link:hover .more-product__link__img--hover {
   opacity: 1 !important; }
 
 .overflow-auto {
@@ -8177,7 +8176,8 @@ li {
     top: -15px !important;
     bottom: auto !important; }
   .more-product-slider-container {
-    direction: ltr; }
+    direction: ltr;
+    cursor: grab; }
     .more-product-slider-container__controls {
       background-color: #fff; }
       .more-product-slider-container__controls__item {
