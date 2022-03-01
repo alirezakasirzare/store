@@ -297,7 +297,9 @@
   margin-top: 100px;
 
   .sliders-container {
-    @extend .col-5;
+    @extend .col-12;
+    @extend .col-lg-6;
+    @extend .col-xl-5;
     @extend .d-flex;
     @extend .flex-column;
     /*rtl:ignore*/
