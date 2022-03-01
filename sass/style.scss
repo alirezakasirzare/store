@@ -639,29 +639,28 @@
 
   .more-product-card:hover .more-product__link__img--hover,
   .more-product-card:active .more-product__link__img--hover {
-    @extend .d-block;
+    @extend .opacity-100;
   }
 
   .more-product-card:hover {
     border-color: $green-200 !important;
   }
 
-  .more-product-card:hover .more-product__link__img,
-  .more-product-card:active .more-product__link__img {
-    @extend .d-none;
-  }
-
   &__link {
     @extend .h-auto;
     @extend .d-block;
+    @extend .position-relative;
     &__img,
     &__img--hover {
       @extend .user-select-none;
       @extend .w-100;
-      @include fadeAnimation(0.4s);
     }
     &__img--hover {
-      @extend .d-none;
+      @extend .position-absolute;
+      @extend .start-0;
+      @extend .top-0;
+      @extend .opacity-0;
+      transition: 0.5s ease opacity;
     }
   }
 

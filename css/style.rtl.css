@@ -5166,7 +5166,7 @@ textarea.form-control-lg {
 .float-none {
   float: none !important; }
 
-.opacity-0 {
+.opacity-0, .more-product__link__img--hover {
   opacity: 0 !important; }
 
 .opacity-25 {
@@ -5178,7 +5178,8 @@ textarea.form-control-lg {
 .opacity-75, .main-section .sliders-container .small-slider__item-container {
   opacity: 0.75 !important; }
 
-.opacity-100, .main-section .sliders-container .small-slider__item-container--active, .main-section .sliders-container .small-slider__item-container:hover {
+.opacity-100, .main-section .sliders-container .small-slider__item-container--active, .main-section .sliders-container .small-slider__item-container:hover, .more-product .more-product-card:hover .more-product__link__img--hover,
+.more-product .more-product-card:active .more-product__link__img--hover {
   opacity: 1 !important; }
 
 .overflow-auto {
@@ -5199,8 +5200,7 @@ textarea.form-control-lg {
 .d-inline-block {
   display: inline-block !important; }
 
-.d-block, .mobile-menu__list__link, .content-product__title--mobile, .more-product .more-product-card:hover .more-product__link__img--hover,
-.more-product .more-product-card:active .more-product__link__img--hover, .more-product__link, .more-product-info-item__price {
+.d-block, .mobile-menu__list__link, .content-product__title--mobile, .more-product__link, .more-product-info-item__price {
   display: block !important; }
 
 .d-grid {
@@ -5221,8 +5221,7 @@ textarea.form-control-lg {
 .d-inline-flex {
   display: inline-flex !important; }
 
-.d-none, .main-header__nav__row__search, .main-header__nav .open-search .main-header__nav__row__right, .main-header__nav .open-search .main-header__nav__row__left, .breadcrumb-container, .main-content-container .content-product__title, .more-product .more-product-card:hover .more-product__link__img,
-.more-product .more-product-card:active .more-product__link__img, .more-product__link__img--hover {
+.d-none, .main-header__nav__row__search, .main-header__nav .open-search .main-header__nav__row__right, .main-header__nav .open-search .main-header__nav__row__left, .breadcrumb-container, .main-content-container .content-product__title {
   display: none !important; }
 
 .shadow {
@@ -5240,10 +5239,10 @@ textarea.form-control-lg {
 .position-static {
   position: static !important; }
 
-.position-relative, .main-header, .main-header__nav__row__search, .mobile-menu .offcanvas-body, .main-section .sliders-container .big-slider-container, .more-product__header, .more-product__header::after, .more-product__header::before, .more-product-slider-container {
+.position-relative, .main-header, .main-header__nav__row__search, .mobile-menu .offcanvas-body, .main-section .sliders-container .big-slider-container, .more-product__header, .more-product__header::after, .more-product__header::before, .more-product-slider-container, .more-product__link {
   position: relative !important; }
 
-.position-absolute, .main-header__nav, .main-header__nav__row__search input, .main-header__nav__row__search__submit, .mobile-menu__image, .main-section .sliders-container .big-slider-container__controls, .main-section .sliders-container .big-slider-container__controls__item, .main-section .sliders-container .big-slider-container__zoom, .main-section .sliders-container .big-slider-container__zoom-btn, .more-product__header::after, .more-product__header::before, .more-product-slider-container__controls, .more-product-slider-container__controls__item {
+.position-absolute, .main-header__nav, .main-header__nav__row__search input, .main-header__nav__row__search__submit, .mobile-menu__image, .main-section .sliders-container .big-slider-container__controls, .main-section .sliders-container .big-slider-container__controls__item, .main-section .sliders-container .big-slider-container__zoom, .main-section .sliders-container .big-slider-container__zoom-btn, .more-product__header::after, .more-product__header::before, .more-product-slider-container__controls, .more-product-slider-container__controls__item, .more-product__link__img--hover {
   position: absolute !important; }
 
 .position-fixed {
@@ -5252,7 +5251,7 @@ textarea.form-control-lg {
 .position-sticky {
   position: sticky !important; }
 
-.top-0, .main-section .sliders-container .big-slider-container__controls, .main-section .sliders-container .big-slider-container__zoom, .more-product-slider-container__controls {
+.top-0, .main-section .sliders-container .big-slider-container__controls, .main-section .sliders-container .big-slider-container__zoom, .more-product-slider-container__controls, .more-product__link__img--hover {
   top: 0 !important; }
 
 .top-50, .main-header__nav__row__search input, .main-header__nav__row__search__submit, .main-section .sliders-container .big-slider-container__controls__item, .more-product-slider-container__controls__item {
@@ -5270,7 +5269,7 @@ textarea.form-control-lg {
 .bottom-100 {
   bottom: 100% !important; }
 
-.start-0, .main-header__nav, .main-header__nav__row__search input, .main-section .sliders-container .big-slider-container__controls, .main-section .sliders-container .big-slider-container__controls__item--next, .main-section .sliders-container .big-slider-container__zoom, .more-product-slider-container__controls, .more-product-slider-container__controls__item--next {
+.start-0, .main-header__nav, .main-header__nav__row__search input, .main-section .sliders-container .big-slider-container__controls, .main-section .sliders-container .big-slider-container__controls__item--next, .main-section .sliders-container .big-slider-container__zoom, .more-product-slider-container__controls, .more-product-slider-container__controls__item--next, .more-product__link__img--hover {
   right: 0 !important; }
 
 .start-50, .mobile-menu__image, .more-product__header::after, .more-product__header::before {
@@ -8193,22 +8192,8 @@ li {
     box-shadow: 0 2px 10px rgba(31, 45, 61, 0.16); }
   .more-product .more-product-card:hover {
     border-color: #a3cfbb !important; }
-  .more-product__link__img, .more-product__link__img--hover {
-    animation-name: slidenavAnimation;
-    animation-duration: 0.4s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-    -webkit-animation-name: slidenavAnimation;
-    -webkit-animation-duration: 0.4s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-name: slidenavAnimation;
-    -moz-animation-duration: 0.4s;
-    -moz-animation-iteration-count: 1;
-    -moz-animation-timing-function: ease;
-    -moz-animation-fill-mode: forwards; }
+  .more-product__link__img--hover {
+    transition: 0.5s ease opacity; }
   .more-product-info-item {
     direction: rtl; }
     .more-product-info-item__price {
