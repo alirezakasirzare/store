@@ -105,8 +105,8 @@ const moreProductSlider = tns({
   mouseDrag: true,
   nav: false,
   controls: false,
-  // edgePadding: 10,
   loop: true,
+  gutter: 10,
   // responsive: {
   //   576: {
   //     items: 4,
