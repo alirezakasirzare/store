@@ -642,6 +642,7 @@
 
   .more-product-card:hover {
     @extend .border-bottom;
+    @extend .border-3;
     border-color: $green-200 !important;
   }
 

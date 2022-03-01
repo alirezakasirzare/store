@@ -5358,7 +5358,7 @@ textarea.form-control-lg {
 .border-2, .mobile-menu__list__link--icon__item {
   border-width: 2px !important; }
 
-.border-3, .main-section .sliders-container .small-slider__item-container--active {
+.border-3, .main-section .sliders-container .small-slider__item-container--active, .more-product .more-product-card:hover {
   border-width: 3px !important; }
 
 .border-4 {
