@@ -97,6 +97,29 @@ const smallSlider = tns({
   },
 });
 
+// more product carousel
+const moreProductSlider = tns({
+  container: "#more-product-slider",
+  items: 3,
+  slideBy: "page",
+  mouseDrag: true,
+  nav: false,
+  controls: false,
+  edgePadding: 10,
+  loop: false,
+  // responsive: {
+  //   576: {
+  //     items: 4,
+  //   },
+  //   768: {
+  //     items: 5,
+  //   },
+  //   992: {
+  //     items: 3,
+  //   },
+  // },
+});
+
 // handel the chnage item event of big slider and change the active item of small slider
 
 bigSlider.events.on("transitionStart", removeActiveItemaInSmallSlider);
