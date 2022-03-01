@@ -592,16 +592,26 @@
     }
   }
 
+  .more-product-card {
+    // @extend .shadow-sm;
+    box-shadow: 0 2px 10px rgba(31, 45, 61, 0.16);
+  }
+
   &__link__img {
+    @extend .user-select-none;
     width: 100%;
   }
 
+  article {
+    @extend .pb-2;
+  }
+
   &-info-item {
+    @extend .py-3;
     direction: ltr;
     &__name {
       @extend .fs-6;
       @extend .text-center;
-      @extend .mt-3;
     }
 
     &__price {

@@ -106,7 +106,7 @@ const moreProductSlider = tns({
   nav: false,
   controls: false,
   loop: true,
-  gutter: 10,
+  gutter: 20,
   // responsive: {
   //   576: {
   //     items: 4,
