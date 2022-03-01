@@ -97,21 +97,21 @@ li {
   }
 }
 
-@mixin fadeAnimation {
+@mixin fadeAnimation($time: 0.8s) {
   animation-name: slidenavAnimation;
-  animation-duration: 0.8s;
+  animation-duration: $time;
   animation-iteration-count: 1;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 
   -webkit-animation-name: slidenavAnimation;
-  -webkit-animation-duration: 0.8s;
+  -webkit-animation-duration: $time;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
 
   -moz-animation-name: slidenavAnimation;
-  -moz-animation-duration: 0.8s;
+  -moz-animation-duration: $time;
   -moz-animation-iteration-count: 1;
   -moz-animation-timing-function: ease;
   -moz-animation-fill-mode: forwards;

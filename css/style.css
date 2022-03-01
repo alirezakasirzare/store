@@ -5328,7 +5328,7 @@ textarea.form-control-lg {
 .border-end-0 {
   border-right: 0 !important; }
 
-.border-bottom {
+.border-bottom, .more-product .more-product-card:hover {
   border-bottom: 1px solid #dee2e6 !important; }
 
 .border-bottom-0 {
@@ -8215,19 +8215,21 @@ li {
         transition: 0.4s ease background; }
   .more-product .more-product-card {
     box-shadow: 0 2px 10px rgba(31, 45, 61, 0.16); }
+  .more-product .more-product-card:hover {
+    border-color: #a3cfbb !important; }
   .more-product__link__img, .more-product__link__img--hover {
     animation-name: slidenavAnimation;
-    animation-duration: 0.8s;
+    animation-duration: 0.2s;
     animation-iteration-count: 1;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     -webkit-animation-name: slidenavAnimation;
-    -webkit-animation-duration: 0.8s;
+    -webkit-animation-duration: 0.2s;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-timing-function: ease;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-name: slidenavAnimation;
-    -moz-animation-duration: 0.8s;
+    -moz-animation-duration: 0.2s;
     -moz-animation-iteration-count: 1;
     -moz-animation-timing-function: ease;
     -moz-animation-fill-mode: forwards; }

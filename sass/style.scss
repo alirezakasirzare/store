@@ -640,6 +640,11 @@
     @extend .d-block;
   }
 
+  .more-product-card:hover {
+    @extend .border-bottom;
+    border-color: $green-200 !important;
+  }
+
   .more-product-card:hover .more-product__link__img {
     @extend .d-none;
   }
@@ -651,7 +656,7 @@
     &__img--hover {
       @extend .user-select-none;
       @extend .w-100;
-      @include fadeAnimation;
+      @include fadeAnimation(0.2s);
     }
     &__img--hover {
       @extend .d-none;
