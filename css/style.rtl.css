@@ -5199,7 +5199,7 @@ textarea.form-control-lg {
 .d-inline-block {
   display: inline-block !important; }
 
-.d-block, .mobile-menu__list__link, .content-product__title--mobile {
+.d-block, .mobile-menu__list__link, .content-product__title--mobile, .more-product-info-item__price {
   display: block !important; }
 
 .d-grid {
@@ -5648,7 +5648,7 @@ textarea.form-control-lg {
 .mt-2, .main-content-container {
   margin-top: 0.5rem !important; }
 
-.mt-3, .main-content-container .content-product__title, .main-content-container .content-product__price, .main-content-container .content-product__inputs-container, .content-product__title--mobile {
+.mt-3, .main-content-container .content-product__title, .main-content-container .content-product__price, .main-content-container .content-product__inputs-container, .content-product__title--mobile, .more-product-info-item__name {
   margin-top: 1rem !important; }
 
 .mt-4, .main-content-container .content-product__buttons, .main-content-container .content-product__buttons__media {
@@ -5879,7 +5879,7 @@ textarea.form-control-lg {
 .fs-5 {
   font-size: 1.25rem !important; }
 
-.fs-6 {
+.fs-6, .more-product-info-item__name, .more-product-info-item__price {
   font-size: 1rem !important; }
 
 .fst-italic {
@@ -5921,7 +5921,7 @@ textarea.form-control-lg {
 .text-end {
   text-align: left !important; }
 
-.text-center, .mobile-menu .mobile-menu__list.mobile-menu__list--login .mobile-menu__list__item .mobile-menu__list__link, .main-content-container .content-product__price, .main-content-container .content-product__info, .more-product__header {
+.text-center, .mobile-menu .mobile-menu__list.mobile-menu__list--login .mobile-menu__list__item .mobile-menu__list__link, .main-content-container .content-product__price, .main-content-container .content-product__info, .more-product__header, .more-product-info-item__name, .more-product-info-item__price {
   text-align: center !important; }
 
 .text-decoration-none, .main-header__nav__row__right__link, .main-header__nav__row__left__link {
@@ -8178,3 +8178,7 @@ li {
     bottom: auto !important; }
   .more-product__link__img {
     width: 100%; }
+  .more-product-info-item {
+    direction: rtl; }
+    .more-product-info-item__price {
+      color: #3d8bfd; }

@@ -595,4 +595,20 @@
   &__link__img {
     width: 100%;
   }
+
+  &-info-item {
+    direction: ltr;
+    &__name {
+      @extend .fs-6;
+      @extend .text-center;
+      @extend .mt-3;
+    }
+
+    &__price {
+      @extend .fs-6;
+      @extend .d-block;
+      @extend .text-center;
+      color: $blue-400;
+    }
+  }
 }
