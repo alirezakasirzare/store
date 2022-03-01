@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "node-sass sass/style.scss css/style.css --watch",
-    "rtl": "rtlcss css/style.css css/style.rtl.css"
+    "rtl": "rtlcss css/style.css css/style.rtl.css",
+    "rtl-w": "watch -p 'css/style.css' -c 'rtlcss css/style.css css/style.rtl.css'"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,8 @@
   },
   "homepage": "https://github.com/alirezakasirzare/store#readme",
   "devDependencies": {
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.1",
+    "watch-cli": "^0.2.3"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
