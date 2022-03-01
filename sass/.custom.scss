@@ -43,6 +43,12 @@ li {
       @content;
     }
   }
+
+  @if ($size == "sm") {
+    @media screen and (min-width: 576px) {
+      @content;
+    }
+  }
 }
 
 .btn-outline-primary-custom {
@@ -109,4 +115,8 @@ li {
   -moz-animation-iteration-count: 1;
   -moz-animation-timing-function: ease;
   -moz-animation-fill-mode: forwards;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden !important;
 }

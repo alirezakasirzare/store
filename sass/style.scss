@@ -419,9 +419,9 @@
 
 // start content
 .breadcrumb-container {
-  @extend .d-flex;
   @extend .gap-3;
   @extend .d-none;
+  @extend .d-lg-flex;
 
   &__link {
     @extend .link-secondary;
@@ -451,6 +451,7 @@
     &__title {
       @extend .mt-3;
       @extend .d-none;
+      @extend .d-lg-block;
 
       h1 {
         @extend .fs-3;
@@ -492,12 +493,27 @@
     &__buttons {
       @extend .mt-4;
       @extend .d-flex;
+      @extend .flex-column;
+      @extend .flex-sm-row;
       @extend .justify-content-between;
       @extend .align-items-center;
+
+      &__btn {
+        @extend .btn;
+        @extend .btn-lg;
+        @extend .btn-custom-submit;
+        @extend .w-100;
+
+        @include media("sm") {
+          width: auto !important;
+        }
+      }
 
       &__media {
         @extend .d-flex;
         @extend .gap-2;
+        @extend .mt-4;
+        @extend .mt-sm-0;
         &__item {
           @extend .link-secondary;
           @extend .fs-4;
