@@ -702,6 +702,17 @@
     @extend .d-block;
   }
 
+  &-menu-item {
+    @extend .mb-1;
+    list-style: disc;
+    list-style-position: inside;
+  }
+
+  &-menu-link {
+    @extend .link-light;
+    text-decoration: none;
+  }
+
   &-copyright {
     @extend .py-3;
     @extend .border-top;
