@@ -8,7 +8,8 @@
     "sass": "node-sass sass/style.scss css/style.css --watch",
     "rtl": "rtlcss css/style.css css/style.rtl.css",
     "rtl-w": "watch -p 'css/style.css' -c 'rtlcss css/style.css css/style.rtl.css'",
-    "min":"purgecss --css css/style.rtl.css --content index.html --output css/"
+    "min": "purgecss --css css/style.rtl.css --content index.html 'js/**/*.js' --output css/min.css",
+    "build-js": "esbuild js.js --bundle --outfile=dist/js.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   "homepage": "https://github.com/alirezakasirzare/store#readme",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.1.3",
+    "esbuild": "^0.14.23",
     "node-sass": "^7.0.1",
     "watch-cli": "^0.2.3"
   },

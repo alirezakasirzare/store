@@ -1,0 +1,12 @@
+// import Dropdown from "./js/lightense.min";
+import Lightense from "./js/lightense.min";
+import Dropdown from "bootstrap/js/dist/dropdown";
+import Tooltip from "bootstrap/js/dist/tooltip";
+import "bootstrap/js/dist/offcanvas";
+import "bootstrap/js/dist/collapse";
+// import "./js/main";
+window.Dropdown = Dropdown;
+window.Tooltip = Tooltip;
+window.Lightense = Lightense;
+// console.log(Lightense);
+import "./js/main";
