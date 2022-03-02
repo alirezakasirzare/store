@@ -700,6 +700,9 @@
   &-title {
     @extend .mb-2;
     @extend .d-block;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: rgba($gray-400, 0.4);
   }
 
   &-menu-item {

@@ -8202,6 +8202,10 @@ li {
 
 .main-footer {
   background-color: #be7783; }
+  .main-footer-title {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: rgba(206, 212, 218, 0.4); }
   .main-footer-menu-item {
     list-style: disc;
     list-style-position: inside; }
