@@ -5800,7 +5800,7 @@ textarea.form-control-lg {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important; }
 
-.py-5 {
+.py-5, .main-footer {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important; }
 
@@ -8223,3 +8223,6 @@ li {
     direction: ltr; }
     .more-product-info-item__price {
       color: #3d8bfd; }
+
+.main-footer {
+  background-color: #be7783; }

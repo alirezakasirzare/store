@@ -685,3 +685,9 @@
     }
   }
 }
+
+// main footer
+.main-footer {
+  @extend .py-5;
+  background-color: $color-primary-500;
+}
