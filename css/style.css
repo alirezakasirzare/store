@@ -7900,7 +7900,7 @@ textarea.form-control-lg {
 
 @font-face {
   font-family: shabnam;
-  src: url(../dist/font/Shabnam.ttf); }
+  src: url(./font/Shabnam.ttf); }
 
 body {
   font-family: shabnam; }
