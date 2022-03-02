@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "node-sass sass/style.scss css/style.css --watch",
     "rtl": "rtlcss css/style.css css/style.rtl.css",
-    "rtl-w": "watch -p 'css/style.css' -c 'rtlcss css/style.css css/style.rtl.css'"
+    "rtl-w": "watch -p 'css/style.css' -c 'rtlcss css/style.css css/style.rtl.css'",
+    "min":"purgecss --css css/style.rtl.css --content index.html --output css/"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/alirezakasirzare/store#readme",
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.1.3",
     "node-sass": "^7.0.1",
     "watch-cli": "^0.2.3"
   },
