@@ -5200,7 +5200,7 @@ textarea.form-control-lg {
 .d-inline-block {
   display: inline-block !important; }
 
-.d-block, .mobile-menu__list__link, .content-product__title--mobile, .more-product__link, .more-product-info-item__price {
+.d-block, .mobile-menu__list__link, .content-product__title--mobile, .more-product__link, .more-product-info-item__price, .main-footer-title {
   display: block !important; }
 
 .d-grid {
@@ -5688,7 +5688,7 @@ textarea.form-control-lg {
 .mb-1 {
   margin-bottom: 0.25rem !important; }
 
-.mb-2 {
+.mb-2, .main-footer-title {
   margin-bottom: 0.5rem !important; }
 
 .mb-3 {

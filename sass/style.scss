@@ -697,6 +697,11 @@
     @extend .py-4;
   }
 
+  &-title {
+    @extend .mb-2;
+    @extend .d-block;
+  }
+
   &-copyright {
     @extend .py-3;
     @extend .border-top;
