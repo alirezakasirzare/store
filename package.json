@@ -8,8 +8,8 @@
     "sass": "node-sass sass/style.scss css/style.css --watch",
     "rtl": "rtlcss css/style.css css/style.rtl.css",
     "rtl-w": "watch -p 'css/style.css' -c 'rtlcss css/style.css css/style.rtl.css'",
-    "min": "purgecss --css css/style.rtl.css --content index.html 'js/**/*.js' --output css/min.css",
-    "build-js": "esbuild js.js --bundle --outfile=dist/js.js"
+    "css-min": "purgecss --css css/style.rtl.css --content dist/index.html 'dist/**/*.js' --output dist/main.css",
+    "build-js": "esbuild js/main.js --bundle --outfile=dist/main.js"
   },
   "repository": {
     "type": "git",

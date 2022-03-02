@@ -4345,14 +4345,14 @@
     }
   });
 
-  // js.js
+  // js/main.js
   var import_lightense = __toESM(require_lightense_min());
   var import_dropdown = __toESM(require_dropdown());
   var import_tooltip = __toESM(require_tooltip());
   var import_offcanvas = __toESM(require_offcanvas());
   var import_collapse = __toESM(require_collapse());
 
-  // js/main.js
+  // js/base.js
   window.addEventListener("load", () => {
     let myDropdownsTogglerHeader = document.querySelectorAll(".main-header [data-bs-toggle='dropdown']");
     myDropdownsTogglerHeader = Array.from(myDropdownsTogglerHeader);
@@ -4490,7 +4490,7 @@
     });
   });
 
-  // js.js
+  // js/main.js
   window.Dropdown = import_dropdown.default;
   window.Tooltip = import_tooltip.default;
   window.Lightense = import_lightense.default;
