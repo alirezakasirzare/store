@@ -505,6 +505,7 @@ progress {
 .container-lg,
 .container-custom,
 .main-section,
+.main-footer-info,
 .container-xl,
 .container-xxl {
   width: 100%;
@@ -522,15 +523,15 @@ progress {
     max-width: 720px; } }
 
 @media (min-width: 992px) {
-  .container, .container-sm, .container-md, .container-lg, .container-custom, .main-section {
+  .container, .container-sm, .container-md, .container-lg, .container-custom, .main-section, .main-footer-info {
     max-width: 960px; } }
 
 @media (min-width: 1200px) {
-  .container, .container-sm, .container-md, .container-lg, .container-custom, .main-section, .container-xl {
+  .container, .container-sm, .container-md, .container-lg, .container-custom, .main-section, .main-footer-info, .container-xl {
     max-width: 1140px; } }
 
 @media (min-width: 1400px) {
-  .container, .container-sm, .container-md, .container-lg, .container-custom, .main-section, .container-xl, .container-xxl {
+  .container, .container-sm, .container-md, .container-lg, .container-custom, .main-section, .main-footer-info, .container-xl, .container-xxl {
     max-width: 1320px; } }
 
 .row {
@@ -3089,7 +3090,7 @@ textarea.form-control-lg {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem; }
   .navbar > .container,
-  .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-custom, .navbar > .main-section, .navbar > .container-xl, .navbar > .container-xxl {
+  .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-custom, .navbar > .main-section, .navbar > .main-footer-info, .navbar > .container-xl, .navbar > .container-xxl {
     display: flex;
     flex-wrap: inherit;
     align-items: center;
@@ -5316,7 +5317,7 @@ textarea.form-control-lg {
 .border-0 {
   border: 0 !important; }
 
-.border-top {
+.border-top, .main-footer-copyright {
   border-top: 1px solid #dee2e6 !important; }
 
 .border-top-0 {
@@ -5764,7 +5765,7 @@ textarea.form-control-lg {
   padding-right: 0.25rem !important;
   padding-left: 0.25rem !important; }
 
-.px-2, .container-custom, .main-section, .main-header__nav__row, .main-header__nav__row__right__link, .main-header__nav__row__left__link, .show-primary {
+.px-2, .container-custom, .main-section, .main-footer-info, .main-header__nav__row, .main-header__nav__row__right__link, .main-header__nav__row__left__link, .show-primary {
   padding-right: 0.5rem !important;
   padding-left: 0.5rem !important; }
 
@@ -5792,15 +5793,15 @@ textarea.form-control-lg {
   padding-top: 0.5rem !important;
   padding-bottom: 0.5rem !important; }
 
-.py-3, .more-product-info-item {
+.py-3, .more-product-info-item, .main-footer-copyright {
   padding-top: 1rem !important;
   padding-bottom: 1rem !important; }
 
-.py-4 {
+.py-4, .main-footer-info {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important; }
 
-.py-5, .main-footer {
+.py-5 {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important; }
 
@@ -5993,7 +5994,7 @@ textarea.form-control-lg {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-danger-rgb), var(--bs-text-opacity)) !important; }
 
-.text-light, .mobile-menu {
+.text-light, .mobile-menu, .main-footer {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important; }
 
@@ -6423,7 +6424,7 @@ textarea.form-control-lg {
   .px-sm-2 {
     padding-right: 0.5rem !important;
     padding-left: 0.5rem !important; }
-  .px-sm-3, .container-custom, .main-section {
+  .px-sm-3, .container-custom, .main-section, .main-footer-info {
     padding-right: 1rem !important;
     padding-left: 1rem !important; }
   .px-sm-4 {
@@ -7094,7 +7095,7 @@ textarea.form-control-lg {
     padding: 1.5rem !important; }
   .p-lg-5 {
     padding: 3rem !important; }
-  .px-lg-0, .container-custom, .main-section {
+  .px-lg-0, .container-custom, .main-section, .main-footer-info {
     padding-right: 0 !important;
     padding-left: 0 !important; }
   .px-lg-1 {
@@ -8226,3 +8227,7 @@ li {
 
 .main-footer {
   background-color: #be7783; }
+  .main-footer-copyright {
+    border-color: rgba(206, 212, 218, 0.4) !important;
+    color: #e9ecef;
+    font-size: 13px; }

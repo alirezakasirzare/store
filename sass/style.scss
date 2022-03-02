@@ -688,6 +688,20 @@
 
 // main footer
 .main-footer {
-  @extend .py-5;
+  // @extend .py-5;
+  @extend .text-light;
   background-color: $color-primary-500;
+
+  &-info {
+    @extend .container-custom;
+    @extend .py-4;
+  }
+
+  &-copyright {
+    @extend .py-3;
+    @extend .border-top;
+    border-color: rgba($gray-400, 0.4) !important;
+    color: $gray-200;
+    font-size: 13px;
+  }
 }
